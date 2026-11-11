@@ -76,7 +76,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-aad0577e513525cff268774c41effdc7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-d34d9fff34b587ccbe81a3c296c25107.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-9d9254472f1004064f351133bd55448f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -126,7 +126,7 @@ background-size: cover;
 
 <meta property="og:title" content="Testing polars in python with seaborn">
 <meta property="og:description" content="Publication ready data visualization using R, Quarto, Shiny apps and more">
-<meta property="og:image" content="https://nbisweden.github.io/workshop-data-visualization-r/topics/python_polars_files/figure-html/cell-7-output-1.png">
+<meta property="og:image" content="https://nbisweden.github.io/workshop-dataviz/topics/python_polars_files/figure-html/cell-7-output-1.png">
 <meta property="og:image:height" content="858">
 <meta property="og:image:width" content="1186">
 </head>
@@ -178,7 +178,7 @@ background-size: cover;
 <span class="menu-text">Info</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/NBISweden/workshop-data-visualization-r/"> <i class="bi bi-github" role="img" aria-label="GitHub">
+    <a class="nav-link" href="https://github.com/NBISweden/workshop-dataviz/"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -204,7 +204,7 @@ background-size: cover;
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">06-Oct-2026</p>
+        <p class="date">11-Nov-2026</p>
       </div>
     </div>
     
@@ -351,7 +351,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </div>
 <section id="from-a-file" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="from-a-file"><span class="header-section-number">1.1</span> From a file</h2>
-<div id="c9cd9515" class="cell" data-execution_count="2">
+<div id="a9fc66ca" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>gc_raw <span class="op">=</span> pl.read_csv(<span class="st">"../data/counts_raw.txt"</span>, has_header<span class="op">=</span><span class="va">True</span>, separator<span class="op">=</span><span class="st">"</span><span class="ch">\t</span><span class="st">"</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>gc_raw.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
@@ -480,7 +480,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </section>
 <section id="wide-to-long-format" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="wide-to-long-format"><span class="header-section-number">1.2</span> Wide to Long format</h2>
-<div id="bbab212c" class="cell" data-execution_count="3">
+<div id="ee16c5c0" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>gc_raw_long <span class="op">=</span> gc_raw.unpivot(index<span class="op">=</span>[<span class="st">"Gene"</span>], variable_name<span class="op">=</span><span class="st">"Sample_ID"</span>, value_name<span class="op">=</span><span class="st">"counts"</span>)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>gc_raw_long.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
@@ -539,7 +539,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </section>
 <section id="joining-metadata" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="joining-metadata"><span class="header-section-number">1.3</span> Joining metadata</h2>
-<div id="e9499b12" class="cell" data-execution_count="4">
+<div id="55437cb7" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>md <span class="op">=</span> pl.read_csv(<span class="st">"../data/metadata.csv"</span>, has_header<span class="op">=</span><span class="va">True</span>, separator<span class="op">=</span><span class="st">";"</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>md.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
@@ -609,7 +609,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </div>
 </div>
 </div>
-<div id="34b3b6fa" class="cell" data-execution_count="5">
+<div id="5ec817e3" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>gc_raw_all <span class="op">=</span> gc_raw_long.join(md, on<span class="op">=</span><span class="st">"Sample_ID"</span>, how<span class="op">=</span><span class="st">"left"</span>)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>gc_raw_all.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
@@ -697,7 +697,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </section>
 <section id="seaborn" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Seaborn</h1>
-<div id="b7cd74e1" class="cell" data-execution_count="6">
+<div id="262e7d7b" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(penguins, x<span class="op">=</span><span class="st">"bill_length_mm"</span>, y<span class="op">=</span><span class="st">"flipper_length_mm"</span>, hue<span class="op">=</span><span class="st">"species"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -708,7 +708,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </div>
 </div>
 </div>
-<div id="490d7223" class="cell" data-execution_count="7">
+<div id="fae70438" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>sns.regplot(penguins, x<span class="op">=</span><span class="st">"bill_length_mm"</span>, y<span class="op">=</span><span class="st">"flipper_length_mm"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
@@ -718,7 +718,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </div>
 </div>
 </div>
-<div id="9dccf019" class="cell" data-execution_count="8">
+<div id="eb6d3f6b" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>sns.lmplot(penguins, x<span class="op">=</span><span class="st">"bill_length_mm"</span>, y<span class="op">=</span><span class="st">"flipper_length_mm"</span>, hue<span class="op">=</span><span class="st">"species"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
@@ -728,7 +728,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </div>
 </div>
 </div>
-<div id="a82e3122" class="cell" data-execution_count="9">
+<div id="17022094" class="cell" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>sns.lmplot(penguins, x<span class="op">=</span><span class="st">"bill_length_mm"</span>, y<span class="op">=</span><span class="st">"flipper_length_mm"</span>, hue<span class="op">=</span><span class="st">"species"</span>, palette<span class="op">=</span><span class="st">'Set2'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
@@ -738,7 +738,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </div>
 </div>
 </div>
-<div id="25daf524" class="cell" data-execution_count="10">
+<div id="7a44f939" class="cell" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>custom_palette <span class="op">=</span> [<span class="st">'#FF6347'</span>, <span class="st">'#4682B4'</span>, <span class="st">'#8A2BE2'</span>, <span class="st">'#FFD700'</span>]</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>sns.lmplot(penguins, x<span class="op">=</span><span class="st">"bill_length_mm"</span>, y<span class="op">=</span><span class="st">"flipper_length_mm"</span>, hue<span class="op">=</span><span class="st">"species"</span>, palette<span class="op">=</span>custom_palette)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -749,7 +749,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </div>
 </div>
 </div>
-<div id="a31c01af" class="cell" data-execution_count="11">
+<div id="276c31b9" class="cell" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>gc_raw_log <span class="op">=</span> gc_raw_all.with_columns([</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    ( pl.col(<span class="st">"counts"</span>).log1p() <span class="op">/</span> np.log(<span class="dv">10</span>) ).alias(<span class="st">"log10_counts"</span>)</span>
@@ -765,7 +765,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </div>
 <section id="move-legend" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="move-legend"><span class="header-section-number">2.1</span> move legend</h2>
-<div id="b1a3b446" class="cell" data-execution_count="12">
+<div id="12d440a2" class="cell" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>p1 <span class="op">=</span> sns.boxplot(data<span class="op">=</span>gc_raw_log, x<span class="op">=</span><span class="st">"Sample_Name"</span>, y<span class="op">=</span><span class="st">"log10_counts"</span>, hue<span class="op">=</span><span class="st">"Time"</span>)</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>sns.move_legend(p1, <span class="st">"upper left"</span>, bbox_to_anchor<span class="op">=</span>(<span class="dv">1</span>, <span class="fl">0.75</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -779,7 +779,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </section>
 <section id="histogram" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="histogram"><span class="header-section-number">2.2</span> Histogram</h2>
-<div id="02b327fa" class="cell" data-execution_count="13">
+<div id="e281b809" class="cell" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>sns.histplot(data<span class="op">=</span>penguins, x<span class="op">=</span><span class="st">"flipper_length_mm"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
@@ -789,7 +789,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </div>
 </div>
 </div>
-<div id="8aa8db9c" class="cell" data-execution_count="14">
+<div id="4aec03e2" class="cell" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>sns.histplot(data<span class="op">=</span>penguins, x<span class="op">=</span><span class="st">"flipper_length_mm"</span>, kde<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
@@ -799,7 +799,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </div>
 </div>
 </div>
-<div id="8eb355d1" class="cell" data-execution_count="15">
+<div id="ee0ce31c" class="cell" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>sns.histplot(data<span class="op">=</span>penguins, x<span class="op">=</span><span class="st">"flipper_length_mm"</span>, hue<span class="op">=</span><span class="st">"species"</span>, multiple<span class="op">=</span><span class="st">"stack"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
@@ -812,7 +812,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </section>
 <section id="faceting" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="faceting"><span class="header-section-number">2.3</span> Faceting</h2>
-<div id="62f93924" class="cell" data-execution_count="16">
+<div id="9beb6926" class="cell" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> sns.FacetGrid(gc_raw_log, col<span class="op">=</span><span class="st">"Time"</span>, hue<span class="op">=</span><span class="st">"Time"</span>)</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>g.map_dataframe(sns.boxplot, <span class="st">"Sample_Name"</span>, <span class="st">"log10_counts"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -823,7 +823,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </div>
 </div>
 </div>
-<div id="b35d9809" class="cell" data-execution_count="17">
+<div id="32996b09" class="cell" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> sns.FacetGrid(gc_raw_log, col<span class="op">=</span><span class="st">"Time"</span>, hue<span class="op">=</span><span class="st">"Time"</span>, sharex<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>g.map_dataframe(sns.boxplot, <span class="st">"Sample_Name"</span>, <span class="st">"log10_counts"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -836,7 +836,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </div>
 <section id="dimensional-faceting" class="level3" data-number="2.3.1">
 <h3 data-number="2.3.1" class="anchored" data-anchor-id="dimensional-faceting"><span class="header-section-number">2.3.1</span> 2-dimensional faceting</h3>
-<div id="92e81b63" class="cell" data-execution_count="18">
+<div id="889c3df2" class="cell" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> sns.FacetGrid(penguins, col<span class="op">=</span><span class="st">"island"</span>, row<span class="op">=</span><span class="st">"species"</span>)</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>g.map_dataframe(sns.scatterplot, <span class="st">"bill_length_mm"</span>, <span class="st">"bill_depth_mm"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -850,7 +850,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </section>
 <section id="pairgrid" class="level3" data-number="2.3.2">
 <h3 data-number="2.3.2" class="anchored" data-anchor-id="pairgrid"><span class="header-section-number">2.3.2</span> PairGrid</h3>
-<div id="036ce1c2" class="cell" data-execution_count="19">
+<div id="bde29a83" class="cell" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> sns.PairGrid(penguins, hue<span class="op">=</span><span class="st">"species"</span>)</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>g.<span class="bu">map</span>(sns.scatterplot)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -862,7 +862,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </div>
 </div>
 <p>let us remove the <code>year</code> column as it is not numeric.</p>
-<div id="ddf7b568" class="cell" data-execution_count="20">
+<div id="e5feeff7" class="cell" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>penguins_no_year <span class="op">=</span> penguins.drop(<span class="st">"year"</span>)</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> sns.PairGrid(penguins_no_year, hue<span class="op">=</span><span class="st">"species"</span>)</span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>g.<span class="bu">map</span>(sns.scatterplot)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -874,7 +874,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </div>
 </div>
 </div>
-<div id="c80e65a6" class="cell" data-execution_count="21">
+<div id="d3fc9883" class="cell" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> sns.PairGrid(penguins_no_year, hue<span class="op">=</span><span class="st">"species"</span>)</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>g.map_diag(sns.histplot)</span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>g.map_offdiag(sns.scatterplot)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -886,7 +886,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </div>
 </div>
 </div>
-<div id="e1bf04ef" class="cell" data-execution_count="22">
+<div id="9da6eae6" class="cell" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> sns.PairGrid(penguins_no_year, hue<span class="op">=</span><span class="st">"species"</span>)</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>g.map_diag(sns.histplot, kde<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>g.map_upper(sns.scatterplot)</span>
@@ -902,7 +902,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 <p><code>PairGrid</code> is very flexible and allows you to use different types of plots on the diagonal, upper and lower triangle of the grid. You can also customize the appearance of the plots using the <code>map</code> method.</p>
 <p>There is also a higher-level interface called <code>pairplot</code> that provides a simpler way to create pairwise plots. It is essentially a wrapper around <code>PairGrid</code> that uses scatterplots for the off-diagonal and histograms for the diagonal by default.</p>
 <p><strong>However, <code>pairplot</code> needs the data to be in pandas DataFrame format</strong></p>
-<div id="525502cc" class="cell" data-execution_count="23">
+<div id="b961902f" class="cell" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>sns.pairplot(penguins_no_year.to_pandas(), hue<span class="op">=</span><span class="st">"species"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
@@ -916,7 +916,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </section>
 <section id="text-annotations" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="text-annotations"><span class="header-section-number">2.4</span> Text annotations</h2>
-<div id="c3054789" class="cell" data-execution_count="24">
+<div id="71bb2c16" class="cell" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn.objects <span class="im">as</span> so</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>(</span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>    so.Plot(penguins, x<span class="op">=</span><span class="st">"bill_length_mm"</span>, y<span class="op">=</span><span class="st">"flipper_length_mm"</span>, color<span class="op">=</span><span class="st">"species"</span>)</span>
@@ -930,7 +930,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </div>
 </div>
 </div>
-<div id="acfc6180" class="cell" data-execution_count="25">
+<div id="12613795" class="cell" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>(</span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>    so.Plot(penguins, x<span class="op">=</span><span class="st">"bill_length_mm"</span>, y<span class="op">=</span><span class="st">"flipper_length_mm"</span>, color<span class="op">=</span><span class="st">"species"</span>, text<span class="op">=</span><span class="st">"sex"</span>)</span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    .add(so.Dot())</span>
@@ -944,7 +944,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 </div>
 </div>
 </div>
-<div id="d8cdf8c8" class="cell" data-execution_count="26">
+<div id="46807a64" class="cell" data-execution_count="26">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> std_err(col: pl.Expr) <span class="op">-&gt;</span> pl.Expr:</span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> ((col.var() <span class="op">/</span> col.count()).sqrt())</span>
 <span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -980,19 +980,19 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
 <td>0.002484</td>
 </tr>
 <tr class="even">
+<td>"t24"</td>
+<td>0.674977</td>
+<td>0.002619</td>
+</tr>
+<tr class="odd">
 <td>"t0"</td>
 <td>0.560369</td>
 <td>0.002369</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>"t6"</td>
 <td>0.605814</td>
 <td>0.002465</td>
-</tr>
-<tr class="even">
-<td>"t24"</td>
-<td>0.674977</td>
-<td>0.002619</td>
 </tr>
 </tbody>
 </table>
@@ -1131,7 +1131,7 @@ pip install polars seaborn numpy palmerpenguins</code></pre>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/nbisweden\.github\.io\/workshop-data-visualization-r\/");
+        var filterRegex = new RegExp("https:\/\/nbisweden\.github\.io\/workshop-dataviz\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

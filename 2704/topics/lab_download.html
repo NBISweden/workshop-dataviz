@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-aad0577e513525cff268774c41effdc7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-d34d9fff34b587ccbe81a3c296c25107.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-9d9254472f1004064f351133bd55448f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -123,7 +123,7 @@ background-size: cover;
 
 <meta property="og:title" content="Download data">
 <meta property="og:description" content="Workshop on Advanced Data Visualization">
-<meta property="og:image" content="https://nbisweden.github.io/workshop-data-visualization-r/topics/assets/images/seo.webp">
+<meta property="og:image" content="https://nbisweden.github.io/workshop-dataviz/topics/assets/images/seo.webp">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -173,7 +173,7 @@ background-size: cover;
 <span class="menu-text">Info</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/NBISweden/workshop-data-visualization-r/"> <i class="bi bi-github" role="img" aria-label="GitHub">
+    <a class="nav-link" href="https://github.com/NBISweden/workshop-dataviz/"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -206,7 +206,7 @@ background-size: cover;
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">06-Oct-2026</p>
+        <p class="date">11-Nov-2026</p>
       </div>
     </div>
     
@@ -248,7 +248,7 @@ background-size: cover;
 <h1 data-number="1"><span class="header-section-number">1</span> Main exercises</h1>
 <p>The following data will be used in the used for the exercises in this course. The data comes from a mock RNA sequencing data with 12 samples that are from cell-lines. As in any normal RNAseq analysis the counts of genes were normalized using different methods such as <code>VST</code> and <code>CPM</code> after filtering out the genes that were of very low expression. We would use these data for visualizations.</p>
 <p><strong>Download all of these files into your current working directory</strong></p>
-<p>You can download all the files together <a href="https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/data.zip">here</a>. Make a directory called <code>data</code> and <code>unzip</code> in that directory!</p>
+<p>You can download all the files together <a href="https://github.com/NBISweden/workshop-dataviz/raw/main/data/data.zip">here</a>. Make a directory called <code>data</code> and <code>unzip</code> in that directory!</p>
 <p>If <code>workshop_on_advanced_data_visualization</code> is the current working directory, the directory tree should look like this:</p>
 <ul>
 <li><span style="color:blue">workshop_on_advanced_data_visualization</span>
@@ -279,32 +279,32 @@ background-size: cover;
 <section id="counts-table" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="counts-table"><span class="header-section-number">1.1</span> Counts table</h2>
 <ul>
-<li>Table with gene counts after filtering: <a href="https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/counts_filtered.txt">Filtered Counts</a></li>
-<li>Table with gene counts normalized with VST: <a href="https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/counts_vst.txt">VST counts</a></li>
-<li>Table with gene counts normalized with DESeq2: <a href="https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/counts_deseq2.txt">DESeq2 counts</a></li>
+<li>Table with gene counts after filtering: <a href="https://github.com/NBISweden/workshop-dataviz/raw/main/data/counts_filtered.txt">Filtered Counts</a></li>
+<li>Table with gene counts normalized with VST: <a href="https://github.com/NBISweden/workshop-dataviz/raw/main/data/counts_vst.txt">VST counts</a></li>
+<li>Table with gene counts normalized with DESeq2: <a href="https://github.com/NBISweden/workshop-dataviz/raw/main/data/counts_deseq2.txt">DESeq2 counts</a></li>
 </ul>
 </section>
 <section id="metadata" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="metadata"><span class="header-section-number">1.2</span> Metadata</h2>
 <ul>
-<li>Metadata of the samples: <a href="https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/metadata.csv">Sample Metadata</a></li>
-<li>Metadata of the genes with their functions: <a href="https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/human_biomaRt_annotation.csv">Gene Annotation</a></li>
+<li>Metadata of the samples: <a href="https://github.com/NBISweden/workshop-dataviz/raw/main/data/metadata.csv">Sample Metadata</a></li>
+<li>Metadata of the genes with their functions: <a href="https://github.com/NBISweden/workshop-dataviz/raw/main/data/human_biomaRt_annotation.csv">Gene Annotation</a></li>
 </ul>
 </section>
 <section id="de-genes" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="de-genes"><span class="header-section-number">1.3</span> DE genes</h2>
 <p>Below are the lists of differentially expressed genes between different time points</p>
 <ul>
-<li><a href="https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/Time_t2_vs_t0.txt">Time point 2 vs Time point 0</a></li>
-<li><a href="https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/Time_t6_vs_t0.txt">Time point 6 vs Time point 0</a></li>
-<li><a href="https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/Time_t24_vs_t0.txt">Time point 24 vs Time point 0</a></li>
+<li><a href="https://github.com/NBISweden/workshop-dataviz/raw/main/data/Time_t2_vs_t0.txt">Time point 2 vs Time point 0</a></li>
+<li><a href="https://github.com/NBISweden/workshop-dataviz/raw/main/data/Time_t6_vs_t0.txt">Time point 6 vs Time point 0</a></li>
+<li><a href="https://github.com/NBISweden/workshop-dataviz/raw/main/data/Time_t24_vs_t0.txt">Time point 24 vs Time point 0</a></li>
 </ul>
 </section>
 </section>
 <section id="cake-data" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Cake Data</h1>
 <ul>
-<li><a href="https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/2024_final_scores.tsv">2024_final_scores.tsv</a></li>
+<li><a href="https://github.com/NBISweden/workshop-dataviz/raw/main/data/2024_final_scores.tsv">2024_final_scores.tsv</a></li>
 </ul>
 <p>This data contains averaged scores the different bakers got each week at a cake club from a research group.</p>
 </section>
@@ -322,14 +322,14 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>If you are interested in leaning about how to work with phylogeny in ggplot and R. You can follow some tutorial materials <a href="https://nbisweden.github.io/workshop-data-visualization-r/2304/home_content.html#51_Phylogenetic_trees">here</a></p>
+<p>If you are interested in leaning about how to work with phylogeny in ggplot and R. You can follow some tutorial materials <a href="https://nbisweden.github.io/workshop-dataviz/2304/home_content.html#51_Phylogenetic_trees">here</a></p>
 </div>
 </div>
 <p>The data required for the phylogenetic trees are already part of the main <code>data.zip</code> file, as shown in the directory tree before. The files needed for this exercise are described below:</p>
 <ul>
-<li>A phylogenetic tree based on a group of archaeal genomes in newick format: <a href="https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/arch_newick.txt">Archaea tree</a></li>
-<li>Some metadata info regarding the environments that these archaea could be found: <a href="https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/tree_env.tsv">Environment info</a></li>
-<li>An expression matrix to show heatmap and phylogenetic tree together: <a href="https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/tree_hmap.tsv">for heatmap</a></li>
+<li>A phylogenetic tree based on a group of archaeal genomes in newick format: <a href="https://github.com/NBISweden/workshop-dataviz/raw/main/data/arch_newick.txt">Archaea tree</a></li>
+<li>Some metadata info regarding the environments that these archaea could be found: <a href="https://github.com/NBISweden/workshop-dataviz/raw/main/data/tree_env.tsv">Environment info</a></li>
+<li>An expression matrix to show heatmap and phylogenetic tree together: <a href="https://github.com/NBISweden/workshop-dataviz/raw/main/data/tree_hmap.tsv">for heatmap</a></li>
 </ul>
 </section>
 <section id="map-data-with-ggmap" class="level2" data-number="3.2">
@@ -344,14 +344,14 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>If you are interested in leaning about how to work with maps in ggplot and R. You can follow some tutorial materials <a href="https://nbisweden.github.io/workshop-data-visualization-r/2304/lab_ggmap.html">here</a></p>
+<p>If you are interested in leaning about how to work with maps in ggplot and R. You can follow some tutorial materials <a href="https://nbisweden.github.io/workshop-dataviz/2304/lab_ggmap.html">here</a></p>
 </div>
 </div>
-<p>The data required for this part of the exercise can be downloaded from <a href="https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/ggmap_data/ggmap_data.zip">here</a></p>
+<p>The data required for this part of the exercise can be downloaded from <a href="https://github.com/NBISweden/workshop-dataviz/raw/main/data/ggmap_data/ggmap_data.zip">here</a></p>
 <ul>
-<li>Population statistics of the different countries in <a href="https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/ggmap_data/world_population.tsv">2020</a></li>
-<li>A small data frame of points from the <a href="https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/ggmap_data/sisquoc-points.txt">Sisquoc River</a></li>
-<li>GPS readings from a personal <a href="https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/ggmap_data/running.csv">run</a></li>
+<li>Population statistics of the different countries in <a href="https://github.com/NBISweden/workshop-dataviz/raw/main/data/ggmap_data/world_population.tsv">2020</a></li>
+<li>A small data frame of points from the <a href="https://github.com/NBISweden/workshop-dataviz/raw/main/data/ggmap_data/sisquoc-points.txt">Sisquoc River</a></li>
+<li>GPS readings from a personal <a href="https://github.com/NBISweden/workshop-dataviz/raw/main/data/ggmap_data/running.csv">run</a></li>
 </ul>
 <hr>
 
@@ -486,7 +486,7 @@ Tip
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/nbisweden\.github\.io\/workshop-data-visualization-r\/");
+        var filterRegex = new RegExp("https:\/\/nbisweden\.github\.io\/workshop-dataviz\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -873,7 +873,7 @@ Tip
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>**Download all of these files into your current working directory**</span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>You can download all the files together <span class="co">[</span><span class="ot">here</span><span class="co">](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/data.zip)</span>.</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>You can download all the files together <span class="co">[</span><span class="ot">here</span><span class="co">](https://github.com/NBISweden/workshop-dataviz/raw/main/data/data.zip)</span>.</span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>Make a directory called <span class="in">`data`</span> and <span class="in">`unzip`</span> in that directory!</span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>If <span class="in">`workshop_on_advanced_data_visualization`</span> is the current working directory, the directory tree should look like this:</span>
@@ -903,26 +903,26 @@ Tip
 <span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="fu">## Counts table</span></span>
 <span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Table with gene counts after filtering: <span class="co">[</span><span class="ot">Filtered Counts</span><span class="co">](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/counts_filtered.txt)</span></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Table with gene counts normalized with VST: <span class="co">[</span><span class="ot">VST counts</span><span class="co">](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/counts_vst.txt)</span></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Table with gene counts normalized with DESeq2: <span class="co">[</span><span class="ot">DESeq2 counts</span><span class="co">](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/counts_deseq2.txt)</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Table with gene counts after filtering: <span class="co">[</span><span class="ot">Filtered Counts</span><span class="co">](https://github.com/NBISweden/workshop-dataviz/raw/main/data/counts_filtered.txt)</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Table with gene counts normalized with VST: <span class="co">[</span><span class="ot">VST counts</span><span class="co">](https://github.com/NBISweden/workshop-dataviz/raw/main/data/counts_vst.txt)</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Table with gene counts normalized with DESeq2: <span class="co">[</span><span class="ot">DESeq2 counts</span><span class="co">](https://github.com/NBISweden/workshop-dataviz/raw/main/data/counts_deseq2.txt)</span></span>
 <span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="fu">## Metadata</span></span>
 <span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Metadata of the samples: <span class="co">[</span><span class="ot">Sample Metadata</span><span class="co">](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/metadata.csv)</span></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Metadata of the genes with their functions: <span class="co">[</span><span class="ot">Gene Annotation</span><span class="co">](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/human_biomaRt_annotation.csv)</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Metadata of the samples: <span class="co">[</span><span class="ot">Sample Metadata</span><span class="co">](https://github.com/NBISweden/workshop-dataviz/raw/main/data/metadata.csv)</span></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Metadata of the genes with their functions: <span class="co">[</span><span class="ot">Gene Annotation</span><span class="co">](https://github.com/NBISweden/workshop-dataviz/raw/main/data/human_biomaRt_annotation.csv)</span></span>
 <span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="fu">## DE genes</span></span>
 <span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>Below are the lists of differentially expressed genes between different time points</span>
 <span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Time point 2 vs Time point 0</span><span class="co">](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/Time_t2_vs_t0.txt)</span></span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Time point 6 vs Time point 0</span><span class="co">](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/Time_t6_vs_t0.txt)</span></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Time point 24 vs Time point 0</span><span class="co">](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/Time_t24_vs_t0.txt)</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Time point 2 vs Time point 0</span><span class="co">](https://github.com/NBISweden/workshop-dataviz/raw/main/data/Time_t2_vs_t0.txt)</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Time point 6 vs Time point 0</span><span class="co">](https://github.com/NBISweden/workshop-dataviz/raw/main/data/Time_t6_vs_t0.txt)</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Time point 24 vs Time point 0</span><span class="co">](https://github.com/NBISweden/workshop-dataviz/raw/main/data/Time_t24_vs_t0.txt)</span></span>
 <span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="fu"># Cake Data</span></span>
 <span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">2024_final_scores.tsv</span><span class="co">](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/2024_final_scores.tsv)</span></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">2024_final_scores.tsv</span><span class="co">](https://github.com/NBISweden/workshop-dataviz/raw/main/data/2024_final_scores.tsv)</span></span>
 <span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>This data contains averaged scores the different bakers got each week at a cake club from a research group.</span>
 <span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
@@ -931,26 +931,26 @@ Tip
 <span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="fu">## Phylogenetic trees</span></span>
 <span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip}</span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>If you are interested in leaning about how to work with phylogeny in ggplot and R. You can follow some tutorial materials <span class="co">[</span><span class="ot">here</span><span class="co">](https://nbisweden.github.io/workshop-data-visualization-r/2304/home_content.html#51_Phylogenetic_trees)</span></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>If you are interested in leaning about how to work with phylogeny in ggplot and R. You can follow some tutorial materials <span class="co">[</span><span class="ot">here</span><span class="co">](https://nbisweden.github.io/workshop-dataviz/2304/home_content.html#51_Phylogenetic_trees)</span></span>
 <span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>The data required for the phylogenetic trees are already part of the main <span class="in">`data.zip`</span> file, as shown in the directory tree before. The files needed for this exercise are described below:</span>
 <span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>A phylogenetic tree based on a group of archaeal genomes in newick format: <span class="co">[</span><span class="ot">Archaea tree</span><span class="co">](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/arch_newick.txt)</span></span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Some metadata info regarding the environments that these archaea could be found: <span class="co">[</span><span class="ot">Environment info</span><span class="co">](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/tree_env.tsv)</span></span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>An expression matrix to show heatmap and phylogenetic tree together: <span class="co">[</span><span class="ot">for heatmap</span><span class="co">](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/tree_hmap.tsv)</span></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>A phylogenetic tree based on a group of archaeal genomes in newick format: <span class="co">[</span><span class="ot">Archaea tree</span><span class="co">](https://github.com/NBISweden/workshop-dataviz/raw/main/data/arch_newick.txt)</span></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Some metadata info regarding the environments that these archaea could be found: <span class="co">[</span><span class="ot">Environment info</span><span class="co">](https://github.com/NBISweden/workshop-dataviz/raw/main/data/tree_env.tsv)</span></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>An expression matrix to show heatmap and phylogenetic tree together: <span class="co">[</span><span class="ot">for heatmap</span><span class="co">](https://github.com/NBISweden/workshop-dataviz/raw/main/data/tree_hmap.tsv)</span></span>
 <span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="fu">## Map-data with ggmap</span></span>
 <span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip}</span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>If you are interested in leaning about how to work with maps in ggplot and R. You can follow some tutorial materials <span class="co">[</span><span class="ot">here</span><span class="co">](https://nbisweden.github.io/workshop-data-visualization-r/2304/lab_ggmap.html)</span></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>If you are interested in leaning about how to work with maps in ggplot and R. You can follow some tutorial materials <span class="co">[</span><span class="ot">here</span><span class="co">](https://nbisweden.github.io/workshop-dataviz/2304/lab_ggmap.html)</span></span>
 <span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>The data required for this part of the exercise can be downloaded from <span class="co">[</span><span class="ot">here</span><span class="co">](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/ggmap_data/ggmap_data.zip)</span></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>The data required for this part of the exercise can be downloaded from <span class="co">[</span><span class="ot">here</span><span class="co">](https://github.com/NBISweden/workshop-dataviz/raw/main/data/ggmap_data/ggmap_data.zip)</span></span>
 <span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Population statistics of the different countries in <span class="co">[</span><span class="ot">2020</span><span class="co">](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/ggmap_data/world_population.tsv)</span></span>
-<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>A small data frame of points from the <span class="co">[</span><span class="ot">Sisquoc River</span><span class="co">](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/ggmap_data/sisquoc-points.txt)</span></span>
-<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>GPS readings from a personal <span class="co">[</span><span class="ot">run</span><span class="co">](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/ggmap_data/running.csv)</span></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Population statistics of the different countries in <span class="co">[</span><span class="ot">2020</span><span class="co">](https://github.com/NBISweden/workshop-dataviz/raw/main/data/ggmap_data/world_population.tsv)</span></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>A small data frame of points from the <span class="co">[</span><span class="ot">Sisquoc River</span><span class="co">](https://github.com/NBISweden/workshop-dataviz/raw/main/data/ggmap_data/sisquoc-points.txt)</span></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>GPS readings from a personal <span class="co">[</span><span class="ot">run</span><span class="co">](https://github.com/NBISweden/workshop-dataviz/raw/main/data/ggmap_data/running.csv)</span></span>
 <span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>***</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>

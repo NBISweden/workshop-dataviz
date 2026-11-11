@@ -53,7 +53,7 @@
     "href": "topics/python_polars.html#text-annotations",
     "title": "Testing polars in python with seaborn",
     "section": "2.4 Text annotations",
-    "text": "2.4 Text annotations\n\nimport seaborn.objects as so\n(\n    so.Plot(penguins, x=\"bill_length_mm\", y=\"flipper_length_mm\", color=\"species\")\n    .add(so.Dot())\n)\n\n\n\n\n\n\n\n\n\n(\n    so.Plot(penguins, x=\"bill_length_mm\", y=\"flipper_length_mm\", color=\"species\", text=\"sex\")\n    .add(so.Dot())\n    .add(so.Text())\n)\n\n\n\n\n\n\n\n\n\ndef std_err(col: pl.Expr) -&gt; pl.Expr:\n    return ((col.var() / col.count()).sqrt())\n\ngc_raw_log_1 = gc_raw_log.group_by('Time').agg(pl.col('log10_counts').mean().alias('mean'), std_err(pl.col('log10_counts')).alias('std_err'))\n\ngc_raw_log_1\n\n\nshape: (4, 3)\n\n\n\nTime\nmean\nstd_err\n\n\nstr\nf64\nf64\n\n\n\n\n\"t2\"\n0.605195\n0.002484\n\n\n\"t0\"\n0.560369\n0.002369\n\n\n\"t6\"\n0.605814\n0.002465\n\n\n\"t24\"\n0.674977\n0.002619"
+    "text": "2.4 Text annotations\n\nimport seaborn.objects as so\n(\n    so.Plot(penguins, x=\"bill_length_mm\", y=\"flipper_length_mm\", color=\"species\")\n    .add(so.Dot())\n)\n\n\n\n\n\n\n\n\n\n(\n    so.Plot(penguins, x=\"bill_length_mm\", y=\"flipper_length_mm\", color=\"species\", text=\"sex\")\n    .add(so.Dot())\n    .add(so.Text())\n)\n\n\n\n\n\n\n\n\n\ndef std_err(col: pl.Expr) -&gt; pl.Expr:\n    return ((col.var() / col.count()).sqrt())\n\ngc_raw_log_1 = gc_raw_log.group_by('Time').agg(pl.col('log10_counts').mean().alias('mean'), std_err(pl.col('log10_counts')).alias('std_err'))\n\ngc_raw_log_1\n\n\nshape: (4, 3)\n\n\n\nTime\nmean\nstd_err\n\n\nstr\nf64\nf64\n\n\n\n\n\"t2\"\n0.605195\n0.002484\n\n\n\"t24\"\n0.674977\n0.002619\n\n\n\"t0\"\n0.560369\n0.002369\n\n\n\"t6\"\n0.605814\n0.002465"
   },
   {
     "objectID": "topics/lab_download.html",
@@ -984,14 +984,14 @@
     "href": "index.html",
     "title": "",
     "section": "",
-    "text": "Plotting with ggplot2\nSingle-cell data visualizations with Seurat\nQuarto notebooks and reports\nDynamic plotting with quarto\nInteractive web apps with Shiny\n\n\n\n\n\nUpdated: 06-10-2026 at 14:22:01."
+    "text": "Plotting with ggplot2\nSingle-cell data visualizations with Seurat\nQuarto notebooks and reports\nDynamic plotting with quarto\nInteractive web apps with Shiny\n\n\n\n\n\nUpdated: 11-11-2026 at 10:35:45."
   },
   {
     "objectID": "index.html#advanced-data-visualization",
     "href": "index.html#advanced-data-visualization",
     "title": "",
     "section": "",
-    "text": "Plotting with ggplot2\nSingle-cell data visualizations with Seurat\nQuarto notebooks and reports\nDynamic plotting with quarto\nInteractive web apps with Shiny\n\n\n\n\n\nUpdated: 06-10-2026 at 14:22:01."
+    "text": "Plotting with ggplot2\nSingle-cell data visualizations with Seurat\nQuarto notebooks and reports\nDynamic plotting with quarto\nInteractive web apps with Shiny\n\n\n\n\n\nUpdated: 11-11-2026 at 10:35:45."
   },
   {
     "objectID": "home_schedule.html",

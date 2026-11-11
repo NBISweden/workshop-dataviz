@@ -77,7 +77,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-aad0577e513525cff268774c41effdc7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d34d9fff34b587ccbe81a3c296c25107.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-9d9254472f1004064f351133bd55448f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -126,7 +126,7 @@ background-size: cover;
 
 <meta property="og:title" content="Advanced ggplot">
 <meta property="og:description" content="Workshop on Advanced Data Visualization">
-<meta property="og:image" content="https://nbisweden.github.io/workshop-data-visualization-r/topics/ggplot/lab_gg2_files/figure-html/unnamed-chunk-2-1.png">
+<meta property="og:image" content="https://nbisweden.github.io/workshop-dataviz/topics/ggplot/lab_gg2_files/figure-html/unnamed-chunk-2-1.png">
 <meta property="og:image:height" content="960">
 <meta property="og:image:width" content="1344">
 </head>
@@ -178,7 +178,7 @@ background-size: cover;
 <span class="menu-text">Info</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/NBISweden/workshop-data-visualization-r/"> <i class="bi bi-github" role="img" aria-label="GitHub">
+    <a class="nav-link" href="https://github.com/NBISweden/workshop-dataviz/"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -211,7 +211,7 @@ background-size: cover;
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">06-Oct-2026</p>
+        <p class="date">11-Nov-2026</p>
       </div>
     </div>
     
@@ -732,7 +732,7 @@ background-size: cover;
 <section id="ggdraw-and-draw_plot" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="ggdraw-and-draw_plot"><span class="header-section-number">5.2</span> ggdraw and draw_plot</h2>
 <p>In <code>cowplot</code>, you can also customize the dimensions of the plots in a much more controlled fashion. For this one starts with <code>ggdraw()</code> which initiates the drawing “canvas” followed by <code>draw_plot()</code> that you use to draw the different plots on to the canvas.</p>
-<p>Here is how the dimensions of the empty canvas looks like: <img src="https://github.com/NBISweden/workshop-data-visualization-r/raw/main/assets/images/canva.png" class="img-fluid"></p>
+<p>Here is how the dimensions of the empty canvas looks like: <img src="https://github.com/NBISweden/workshop-dataviz/raw/main/assets/images/canva.png" class="img-fluid"></p>
 <p>From here, you can draw your plots in the way you want using these dimensions. An example is shown below, where we plot <strong>C</strong> and <strong>D</strong> similar to the plot above:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggdraw</span>() <span class="sc">+</span></span>
@@ -872,7 +872,7 @@ Note
 <h1 data-number="6"><span class="header-section-number">6</span> Adding images to plots</h1>
 <p>Let us you have a microscopic image in <code>jpeg</code> or <code>png</code> that you want to add to a normal <code>ggplot</code> plot that you have made from the data.</p>
 <p>Let’s take for example the RBC cluster from a SEM that is in <code>data/Blood_Cells_Image.jpeg</code>:</p>
-<p><a href="https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/Blood_Cells_Image.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-33"><img src="https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/Blood_Cells_Image.jpeg" class="img-fluid"></a></p>
+<p><a href="https://github.com/NBISweden/workshop-dataviz/raw/main/data/Blood_Cells_Image.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-33"><img src="https://github.com/NBISweden/workshop-dataviz/raw/main/data/Blood_Cells_Image.jpeg" class="img-fluid"></a></p>
 <p>Let us take the following plot that you want to add the image to:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span>
@@ -1048,7 +1048,7 @@ Note
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/nbisweden\.github\.io\/workshop-data-visualization-r\/");
+        var filterRegex = new RegExp("https:\/\/nbisweden\.github\.io\/workshop-dataviz\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
