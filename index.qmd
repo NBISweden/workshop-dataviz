@@ -1,95 +1,229 @@
 ---
-title: "Advanced Data Visualization in R"
-pagetitle: "NBIS Workshop • Advanced Data Visualization in R"
+title: "Advanced Data Visualization"
+pagetitle: "NBIS Workshop • Advanced Data Visualization"
 subtitle: "NBIS Workshop"
 description: "Publication-ready Data Visualization using R including Quarto and Shiny"
 image: "assets/images/seo.webp"
 toc: false
 date: ""
 number-sections: false
-anchor-sections: false
+anchor-sections: true
 ---
 
-## Topics
+::: {.syllabus-grid}
+::: {.syllabus-card .wide}
+#### {{< fa play >}} Beginner Level {#beg-level}
 
-::: {.topic-grid}
-::: {.topic-item}
-### ggplot2
+- Handle data in R for visualizations
+- Apply ggplot grammar to get publication-grade plots
+- Combine different data and/or different plots
+- PCA, Heatmaps, Phylogenetic trees and Maps
 
-Data visualization in R using ggplot2
 :::
 
-::: {.topic-item}
-### Single-cell data
+::: {.syllabus-card .wide}
+#### {{< fa solid forward >}} Advanced Level {#adv-level}
 
-Single-cell data visualization using Seurat
+- Using the language of graphics: ggplot2
+- Basic and advanced plotting in ggplot2
+- Single-cell data visualizations with Seurat
+- Quarto notebooks and reports
+- Dynamic plotting with Quarto
+- Interactive web apps with Shiny
+
 :::
 
-::: {.topic-item}
-### Quarto notebooks
+::: {.syllabus-card}
+#### {{< fa chart-column >}} ggplot2 {#ggplot}
 
-Quarto notebooks and reports
+- How to wrangle data correctly for ggplot
+- Working with `geoms`, `aes`, `facets` ...
+- Combine different plots to publication-grade
+- PCA, Heatmaps and single-cell data visualization
+- Maps and phylogenetic trees visualizations (for interested)
+
 :::
 
-::: {.topic-item}
-### Shiny web applications
+::: {.syllabus-card}
+#### {{< fa solid book-open-reader >}} Quarto {#quarto}
 
-Build interactive web applications using Shiny
+- Quarto syntax and functions
+- Dashboards with quarto
+- Dynamic plotting with `plotly`, `crosstalk` and others
+
+:::
+
+::: {.syllabus-card}
+#### {{< fa solid sun >}} Shiny {#shiny}
+
+- `UI` and `Server`
+- `Reactivity` and error validations
+- Modularization and deployment
+
 :::
 :::
 
-::: {.workshop-facts}
-::: {.workshop-fact}
-**Once a year**
+## Learning outcomes
 
-Typically Spring
-:::
-
-::: {.workshop-fact}
-**Venue**
-
-On-site in Lund, Sweden
-:::
-
-::: {.workshop-fact}
-**About 30 seats**
-
-Registration is required
-:::
-
-::: {.workshop-fact}
-**Taught in English**
-
-Lectures and hands-on exercises
-:::
-:::
+After this workshop, you should be able to:
 
 ::: {.details-grid}
 ::: {.details-section}
-## Audience
+
+#### Advanced level
+::: {.detail-list .checks}
+
+- {{< fa check >}} Handle data in R for visualizations
+- {{< fa check >}} Familiarize with ggplot2 functions and techniques at advanced level
+- {{< fa check >}} Combine different data and/or different plots that are of publication-ready
+- {{< fa check >}} Create interactive documents with Quarto for data exploration and analysis
+- {{< fa check >}} Write your own simple Shiny app in R
+
+:::
+:::
+
+::: {.details-section}
+
+#### Beginner level
+::: {.detail-list .checks}
+
+- {{< fa check >}} Handle data in R for visualizations
+- {{< fa check >}} Apply the grammar efficiently in ggplot to obtain the desired plot
+- {{< fa check >}} Combine different data and/or different plots that are of publication-grade
+
+:::
+:::
+:::
+
+## Who can apply?
+
+::: {.details-grid}
+::: {.details-section}
+
+#### Eligibility
 
 ::: {.detail-list}
 - **Audience:** PhD students, postdocs and researchers in life sciences, healthcare and related fields
 - **Background:** Basic R experience needed
 - **Eligibility:** Swedish applicants are prioritized; international applicants are welcome
+- **Research:** To get the most from the workshop, one could try visualizing their own data during the course and we can help you. 
 :::
+:::
+
+#### How selection works
+
+::: {.detail-list}
+- **Criteria:** Entry requirements, motivation to attend, and gender and geographical balance are considered when applications exceed capacity
+- **Priority:** PhD students are prioritized, followed by postdocs, PIs and other researchers
+- **Master's students:** Accepted when seats are available
+- **International applicants:** Accepted when seats are available
+:::
+:::
+:::
+
+::: {.fee-note}
+NBIS training events do not provide formal university credits. If credits are essential, consult your home department **before applying** to establish whether it can recognize the workshop for credits. Participants with **full attendance** receive a certificate of participation stating the topics covered and the duration of the workshop.
+:::
+
+## Upcoming workshop
+
+This workshop typically runs once a year in spring (Mar/Apr/May). Upcoming workshops are announced on [SciLifeLab Training](https://training.scilifelab.se/) and [NBIS Training](https://nbis.se/training) a few months in advance. In case of a planned upcoming workshop, you will see registration information below.
+
+## Registration
+
+::: {.details-section .fees}
+
+#### Course fees
+
+::: {}
+[On-site]{.fee-mode} Academia, healthcare and government institutions from Sweden
+
+**SEK 2,000**
+:::
+
+::: {.hidden}
+[On-site]{.fee-mode} Industry
+
+**SEK 15,000**
+:::
+
+::: {.hidden}
+[Online]{.fee-mode} All participants
+
+**SEK 1,000**
+:::
+
+An institutional reference is required for invoicing as NBIS cannot invoice individuals. [For on-site courses, the fee includes lunch, coffee, tea and snacks twice a day, and one course dinner. Travel and accommodation are not included; arrange and pay for your own.]{.hidden} Participants are invoiced six weeks before the workshop. No refunds are provided for cancellations.
 :::
 
 ::: {.details-section}
-## Registration and fees
 
-::: {.detail-list}
-- **Announcements:** Published on [SciLifeLab Training](https://training.scilifelab.se/) a few months in advance
-- **Online:** Free for academia; industry participants pay a fee
-- **On-site:** Fees apply to all and include lunch, coffee breaks and a course dinner
-- **Logistics:** Arrange your own travel and accommodation; bring a laptop
-- **Billing:** An institutional reference is required; NBIS cannot invoice individuals
+#### Key dates
+
+::: {.timeline}
+::: {.timeline-step}
+**03 Dec 2026**  
+Applications open
+:::
+
+::: {.timeline-step}
+**05 Mar 2027**  
+Applications close
+:::
+
+::: {.timeline-step}
+**10-12 Mar 2027**  
+Decision
+:::
+
+::: {.timeline-step}
+**19 Mar 2027**  
+Confirmation, invoicing
+:::
+
+::: {.timeline-step}
+**27-29 Apr 2027**  
+Workshop week (Tuesday to Thursday)
 :::
 :::
+:::
+
+::: {.details-section .hero}
+{{< fa circle-check >}} Applications yet to open
+
+[{{< fa calendar-days >}} 27-29 April 2027]{.detail} [{{< fa location-dot >}} Lund, Umeå and Tartu (Estonia)]{.detail}
+
+[[[{{< fa square-pen >}} Apply now]{.large .text-whitesmoke}](){target="_blank" rel="noopener"}]{.btn .btn-primary}
 :::
 
 ## Instances
 
-Choose an instance below for course materials and more information.
+Course materials and practical information for each workshop instance.
 
+::: {style="margin-bottom: 2em;"}
 {{< include _instances.qmd >}}
+:::
+
+## Contact
+
+::: {.details-grid}
+::: {.details-section}
+#### Get in touch
+
+Lokeshwaran Manoharan & Katja Kozjek [[edu.plotting.r@nbis.se](mailto:edu.plotting.r@nbis.se)]{.badge .badge-tertiary}
+:::
+
+::: {.details-section}
+#### Code of conduct
+
+By participating in this workshop, you agree to the [NBIS Code of Conduct](https://nbisweden.github.io/workshop-dataviz/2704/home_coc.html).
+:::
+:::
+
+
+
+---
+
+![](assets/logos/nbis-scilifelab-ngi.svg){height="26px" fig-alt="NBIS, SciLifeLab and NGI logos"}
+
+<p class="small"><a href="https://nbisweden.github.io/workshop-dataviz">Advanced Data Visualization</a>, a workshop created by <a href="https://nbis.se/">National Bioinformatics Infrastructure (NBIS)</a> in partnership with <a href="https://ngisweden.scilifelab.se/">National Genomics Infrastructure (NGI)</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
