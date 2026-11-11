@@ -1,31 +1,30 @@
 start	end	title	attendees	calendarId
-2026-05-05T09:00:00	2026-05-05T09:15:00	Welcome	Markus Ringner	extra
-2026-05-05T09:15:00	2026-05-05T10:15:00	ggplot2 basics	Lokesh Mano	session
-2026-05-05T10:15:00	2026-05-05T10:30:00	Break		free
-2026-05-05T10:30:00	2026-05-05T12:00:00	ggplot2 advanced	Lokesh Mano	session
-2026-05-05T12:00:00	2026-05-05T13:00:00	Lunch		free
-2026-05-05T13:00:00	2026-05-05T13:30:00	Vectors and bitmaps	Markus Ringner	session
-2026-05-05T13:30:00	2026-05-05T15:00:00	PCA plots	Markus Ringner	session
-2026-05-05T15:00:00	2026-05-05T15:30:00	Fika		free
-2026-05-05T15:30:00	2026-05-05T16:30:00	Single-cell	Lokesh Mano	session
-2026-05-05T16:30:00	2026-05-05T17:00:00	Wrap-up day 1	Lokesh Mano	extra
-2026-05-06T09:00:00	2026-05-06T10:15:00	Quarto	Katja Kozjek	session
-2026-05-06T10:15:00	2026-05-06T10:30:00	Break		free
-2026-05-06T10:30:00	2026-05-06T11:00:00	Quarto continued...	Katja Kozjek	session
-2026-05-06T11:00:00	2026-05-06T12:00:00	Dynamic plots	Katja Kozjek	session
-2026-05-06T12:00:00	2026-05-06T13:00:00	Lunch		free
-2026-05-06T13:00:00	2026-05-06T14:00:00	Dynamic plots continued...	Katja Kozjek	session
-2026-05-06T14:00:00	2026-05-06T15:00:00	Dashboards	Katja Kozjek	session
-2026-05-06T15:00:00	2026-05-06T15:30:00	Fika		free
-2026-05-06T15:30:00	2026-05-06T16:30:00	Dashboards continued...	Katja Kozjek	session
-2026-05-06T16:30:00	2026-05-06T17:00:00	Wrap-up day 2	Lokesh Mano	extra
-2026-05-06T18:00:00	2026-05-06T20:30:00	Dinner		extra
-2026-05-07T09:00:00	2026-05-07T10:15:00	R-Shiny I	Lokesh Mano	session
-2026-05-07T10:15:00	2026-05-07T10:30:00	Break		free
-2026-05-07T10:30:00	2026-05-07T12:00:00	R-Shiny II	Lokesh Mano	session
-2026-05-07T12:00:00	2026-05-07T13:00:00	Lunch		free
-2026-05-07T13:00:00	2026-05-07T15:00:00	R-Shiny III	Lokesh Mano	session
-2026-05-07T15:00:00	2026-05-07T15:30:00	Fika		free
-2026-05-07T15:30:00	2026-05-07T16:30:00	Own shiny app		session
-2026-05-07T16:30:00	2026-05-07T16:45:00	Wrap-up day 3	Lokesh Mano	extra
-2026-05-07T16:45:00	2026-05-07T17:00:00	Closing and feedback	Lokesh Mano	extra
+2027-04-27T09:00:00	2027-04-27T09:15:00	Welcome	Markus Ringner	extra
+2027-04-27T09:15:00	2027-04-27T10:15:00	ggplot2 basics	Lokesh Mano	session
+2027-04-27T10:15:00	2027-04-27T10:30:00	Break		free
+2027-04-27T10:30:00	2027-04-27T12:00:00	ggplot2 advanced	Lokesh Mano	session
+2027-04-27T12:00:00	2027-04-27T13:00:00	Lunch		free
+2027-04-27T13:00:00	2027-04-27T13:30:00	Vectors and bitmaps	Markus Ringner	session
+2027-04-27T13:30:00	2027-04-27T15:00:00	PCA plots	Markus Ringner	session
+2027-04-27T15:00:00	2027-04-27T15:30:00	Fika		free
+2027-04-27T15:30:00	2027-04-27T16:30:00	Single-cell	Lokesh Mano	session
+2027-04-27T16:30:00	2027-04-27T17:00:00	Wrap-up day 1	Lokesh Mano	extra
+2027-04-28T09:00:00	2027-04-28T10:15:00	Quarto	Katja Kozjek	session
+2027-04-28T10:15:00	2027-04-28T10:30:00	Break		free
+2027-04-28T10:30:00	2027-04-28T11:00:00	Quarto continued...	Katja Kozjek	session
+2027-04-28T11:00:00	2027-04-28T12:00:00	Dynamic plots	Katja Kozjek	session
+2027-04-28T12:00:00	2027-04-28T13:00:00	Lunch		free
+2027-04-28T13:00:00	2027-04-28T14:00:00	Dynamic plots continued...	Katja Kozjek	session
+2027-04-28T14:00:00	2027-04-28T15:00:00	Dashboards	Katja Kozjek	session
+2027-04-28T15:00:00	2027-04-28T15:30:00	Fika		free
+2027-04-28T15:30:00	2027-04-28T16:30:00	Dashboards continued...	Katja Kozjek	session
+2027-04-28T16:30:00	2027-04-28T17:00:00	Wrap-up day 2	Lokesh Mano	extra
+2027-04-29T09:00:00	2027-04-29T10:15:00	R-Shiny I	Lokesh Mano	session
+2027-04-29T10:15:00	2027-04-29T10:30:00	Break		free
+2027-04-29T10:30:00	2027-04-29T12:00:00	R-Shiny II	Lokesh Mano	session
+2027-04-29T12:00:00	2027-04-29T13:00:00	Lunch		free
+2027-04-29T13:00:00	2027-04-29T15:00:00	R-Shiny III	Lokesh Mano	session
+2027-04-29T15:00:00	2027-04-29T15:30:00	Fika		free
+2027-04-29T15:30:00	2027-04-29T16:30:00	Own shiny app		session
+2027-04-29T16:30:00	2027-04-29T16:45:00	Wrap-up day 3	Lokesh Mano	extra
+2027-04-29T16:45:00	2027-04-29T17:00:00	Closing and feedback	Lokesh Mano	extra
