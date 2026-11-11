@@ -19,7 +19,7 @@ library(tidyverse)
 We will use R in this course for generating plots from different biological data that are of higher quality and standard for publications. To do this, you will brush-up your memory on some important aspects of R that are important for this course below:
 
 :::{.callout-caution title="Download course files"}
-Before starting with the lab sessions of the entire course, you must have downloaded all the necessary files from [here](https://nbisweden.github.io/workshop-data-visualization-r/2505/topics/lab_download.html) and make sure that the directory tree looks similar to the one displayed in that page.
+Before starting with the lab sessions of the entire course, you must have downloaded all the necessary files from [here](https://nbisweden.github.io/workshop-dataviz/2505/topics/lab_download.html) and make sure that the directory tree looks similar to the one displayed in that page.
 
 In that case, you can proceed with the exercise now and remember to have fun 😊
 :::

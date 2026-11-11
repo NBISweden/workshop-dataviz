@@ -250,7 +250,7 @@ Sepal.Length,Sepal.Width,Petal.Length,Petal.Width,Species
 ::: 
 ::: {.column width="47.5%"}
 ```{webr-r}
-url <- "https://raw.githubusercontent.com/NBISweden/workshop-data-visualization-r/main/topics/ggplot/data/iris-head-corrupted.csv"
+url <- "https://raw.githubusercontent.com/NBISweden/workshop-dataviz/main/topics/ggplot/data/iris-head-corrupted.csv"
 download.file(url, "iris-head.csv")
 dir()
 read.table("iris-head.csv", sep = ',')

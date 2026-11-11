@@ -4,7 +4,7 @@
 FROM rocker/verse:4.4
 LABEL Description="Docker image for NBIS workshop"
 LABEL Maintainer="lokeshwaran.manoharan@nbis.se"
-LABEL org.opencontainers.image.source="https://github.com/NBISweden/workshop-data-visualization-r"
+LABEL org.opencontainers.image.source="https://github.com/NBISweden/workshop-dataviz"
 ARG QUARTO_VERSION="1.6.42"
 
 RUN apt-get update -y \

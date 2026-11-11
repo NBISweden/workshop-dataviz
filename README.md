@@ -1,18 +1,18 @@
-# workshop-data-visualization-r [![gh-actions-build-status](https://github.com/NBISweden/workshop-data-visualization-r/actions/workflows/docker.yml/badge.svg)](https://github.com/NBISweden/workshop-data-visualization-r/actions/workflows/docker.yml)
+# workshop-dataviz [![gh-actions-build-status](https://github.com/NBISweden/workshop-dataviz/actions/workflows/docker.yml/badge.svg)](https://github.com/NBISweden/workshop-dataviz/actions/workflows/docker.yml)
 
-This repo contains the course material for NBIS workshop **Advanced Data Visualization**. The rendered view of this repo is available [here](https://nbisweden.github.io/workshop-data-visualization-r/).
+This repo contains the course material for NBIS workshop **Advanced Data Visualization**. The rendered view of this repo is available [here](https://nbisweden.github.io/workshop-dataviz/).
 
 ## Contributing
 
 To add or update contents of this repo (for collaborators), first clone the repo.
 
 ```
-git clone --depth 1 --single-branch --branch main https://github.com/nbisweden/workshop-data-visualization-r.git
+git clone --depth 1 --single-branch --branch main https://github.com/nbisweden/workshop-dataviz.git
 ```
 Then navigate to the repo directory and create new branch.
 
 ```
-cd workshop-data-visualization-r
+cd workshop-dataviz
 git checkout -b my-branch
 ```
 
@@ -58,7 +58,7 @@ docker run --platform linux/amd64 --rm -u 1000:1000 -v ${PWD}:/qmd ghcr.io/nbisw
 ### Convert HTML slides to PDF
 
 ```
-docker run --platform=linux/amd64 -v $PWD:/work astefanutti/decktape https://nbisweden.github.io/workshop-data-visualization-r/2505/topics/ggplot/slide_gg1.html /work/slide_ggplot_intro.pdf
+docker run --platform=linux/amd64 -v $PWD:/work astefanutti/decktape https://nbisweden.github.io/workshop-dataviz/2505/topics/ggplot/slide_gg1.html /work/slide_ggplot_intro.pdf
 ```
 
 ### Serving and automatic rendering

@@ -15,7 +15,7 @@ project:
 
 website:
   open-graph: true
-  site-url: "https://nbisweden.github.io/workshop-data-visualization-r/"
+  site-url: "https://nbisweden.github.io/workshop-dataviz/"
   image: "assets/images/seo.webp"
   description: "Publication ready data visualization using R, Quarto, Shiny apps and more"
   favicon: "assets/favicon.png"
@@ -45,7 +45,7 @@ website:
         href: "home_info.html"
         aria-label: "Info"
       - icon: "github"
-        href: "https://github.com/NBISweden/workshop-data-visualization-r/"
+        href: "https://github.com/NBISweden/workshop-dataviz/"
         aria-label: "GitHub"
   page-footer:
     border: false

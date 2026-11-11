@@ -4,7 +4,7 @@
 FROM ghcr.io/nbisweden/workshop-adv-data-viz:1.8.0
 LABEL Description="Docker image for NBIS workshop"
 LABEL Maintainer="lokeshwaran.manoharan@nbis.se"
-LABEL org.opencontainers.image.source="https://github.com/NBISweden/workshop-data-visualization-r"
+LABEL org.opencontainers.image.source="https://github.com/NBISweden/workshop-dataviz"
 ARG QUARTO_VERSION="1.8.26"
 
 USER root
@@ -25,14 +25,17 @@ RUN apt-get install -y gnupg \
     && apt install -y ./vscode.deb \
     && rm vscode.deb
 
-RUN apt update && apt upgrade -y 
-RUN apt-get install -y python3 python3-pip python3-venv \
+RUN apt update && apt upgrade -y \
+  && apt-get install -y python3 python3-pip python3-venv \
       && apt-get clean
+ENV RETICULATE_PYTHON=/usr/bin/python3
 RUN pip install --break-system-packages polars seaborn plotly altair jupyter
 RUN pip install --break-system-packages palmerpenguins
 RUN pip install --break-system-packages pyarrow
 
-RUN install2.r --error --skipinstalled tidytuesdayR dygraphs reactable reactablefmtr
+RUN install2.r --error --skipinstalled tidytuesdayR dygraphs reactable
+
+RUN pip install --break-system-packages --upgrade shiny htmltools
 
 USER rstudio
 

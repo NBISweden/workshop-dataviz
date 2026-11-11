@@ -36,14 +36,14 @@ install.packages(c("cowplot","crosstalk","dplyr","DT","gganimate","ggiraph",
 ```
 
 ::: {.callout-tip}
-To make sure that the installations went well, we will try to make a quick plot using the packages you just installed. In this plot, we try to see if there is correlation between `BMI` and average `nr. of steps` taken by some volunteers per day. The data and the code for plotting is available [here](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/Installation_check/packages_check.zip). Just `render` or `preview` the `installation_check.qmd` file in RStudio or VScode. You should see the correlation plot, if all the packages are installed properly. 
+To make sure that the installations went well, we will try to make a quick plot using the packages you just installed. In this plot, we try to see if there is correlation between `BMI` and average `nr. of steps` taken by some volunteers per day. The data and the code for plotting is available [here](https://github.com/NBISweden/workshop-dataviz/raw/main/data/Installation_check/packages_check.zip). Just `render` or `preview` the `installation_check.qmd` file in RStudio or VScode. You should see the correlation plot, if all the packages are installed properly. 
 :::
 
 :::{.callout-caution icon="false"}
 
 ### {{< fa solid file-arrow-down >}} Download course files
 
-Please download all the necessary files from [here](https://nbisweden.github.io/workshop-data-visualization-r/2505/topics/lab_download.html) and make sure that the directory tree looks similar to the one displayed in that page.
+Please download all the necessary files from [here](https://nbisweden.github.io/workshop-dataviz/2505/topics/lab_download.html) and make sure that the directory tree looks similar to the one displayed in that page.
 
 :::
 
@@ -53,7 +53,7 @@ To prepare for the course, you can follow one of the links below to warm up your
 
 ::: {.callout-tip}
  - Beginner-level: [Basic warm-up exercises in R](https://immuntech.github.io/Bioinformatics_Workshop_ImmTech/Data/2019-10-15/R_exercise_Lokesh.html)
- - Advanced-level: [ggplot warm-up](https://nbisweden.github.io/workshop-data-visualization-r/2210/home_content.html#4_Main_lab)
+ - Advanced-level: [ggplot warm-up](https://nbisweden.github.io/workshop-dataviz/2210/home_content.html#4_Main_lab)
 :::
 
 ## {{< fa solid toolbox >}} Alternative installations with containers
@@ -74,7 +74,7 @@ The best and most efficient way to work with the Docker image is with `VScode` a
 
  - To install VScode, follow the instructions [here](https://code.visualstudio.com/docs/setup/setup-overview).
  - After successful installation of VScode and Docker, you can install the `Dev Containers` extension for VScode from [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
- - Download the `Dev Container` file from [here](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/container-files/.devcontainer.json). *Make sure that all the course related files are in the same place as this `.devcontainer.json` is hidden file*
+ - Download the `Dev Container` file from [here](https://github.com/NBISweden/workshop-dataviz/raw/main/container-files/.devcontainer.json). *Make sure that all the course related files are in the same place as this `.devcontainer.json` is hidden file*
  - Then in `VScode`, press `Ctrl+Shift+P` (`Cmd+Shift+P` for Mac users) followed by entering `Dev Containers: Open Folder in Container` in the prompt to select the folder where you have all the files or `Dev Containers: Reopen in Container`, if you are already on VScode in the same directory.
  - Now, if everything worked fine, a new window should appear inside the `Advanced Data Visualization` container.
 

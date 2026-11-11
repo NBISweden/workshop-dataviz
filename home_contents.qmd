@@ -42,8 +42,8 @@ s %>%
 :::{.callout-tip icon="false" collapse="false"}
 ## {{< fa solid tree-city >}} &nbsp; Optional or of Interest
 
- * [Visualizing phylogenetic trees](https://nbisweden.github.io/workshop-data-visualization-r/2304/home_content.html#51_Phylogenetic_trees)
- * [Visualizing maps with ggmap and leaflet](https://nbisweden.github.io/workshop-data-visualization-r/2304/lab_ggmap.html)
+ * [Visualizing phylogenetic trees](https://nbisweden.github.io/workshop-dataviz/2304/home_content.html#51_Phylogenetic_trees)
+ * [Visualizing maps with ggmap and leaflet](https://nbisweden.github.io/workshop-dataviz/2304/lab_ggmap.html)
 :::
 
 :::{.callout-tip icon="false" collapse="false"}

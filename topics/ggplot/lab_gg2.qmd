@@ -376,7 +376,7 @@ plot_grid(p1, p2, nrow = 2, labels = c("A", "B"))
 In `cowplot`, you can also customize the dimensions of the plots in a much more controlled fashion. For this one starts with `ggdraw()` which initiates the drawing "canvas" followed by `draw_plot()` that you use to draw the different plots on to the canvas. 
 
 Here is how the dimensions of the empty canvas looks like:
-![](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/assets/images/canva.png)
+![](https://github.com/NBISweden/workshop-dataviz/raw/main/assets/images/canva.png)
 
 From here, you can draw your plots in the way you want using these dimensions. An example is shown below, where we plot **C** and **D** similar to the plot above: 
 
@@ -470,7 +470,7 @@ Let us you have a microscopic image in `jpeg` or `png` that you want to add to a
 
 Let's take for example the RBC cluster from a SEM that is in `data/Blood_Cells_Image.jpeg`:
 
-![](https://github.com/NBISweden/workshop-data-visualization-r/raw/main/data/Blood_Cells_Image.jpeg)
+![](https://github.com/NBISweden/workshop-dataviz/raw/main/data/Blood_Cells_Image.jpeg)
 
 Let us take the following plot that you want to add the image to:
 
