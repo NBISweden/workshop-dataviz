@@ -1,3 +1,3 @@
-## workshop-data-visualization-r
+## workshop-dataviz
 
 Materials from previous workshops.
