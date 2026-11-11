@@ -5,7 +5,7 @@ FROM ghcr.io/nbisweden/workshop-adv-data-viz:1.8.0
 LABEL Description="Docker image for NBIS workshop"
 LABEL Maintainer="lokeshwaran.manoharan@nbis.se"
 LABEL org.opencontainers.image.source="https://github.com/NBISweden/workshop-dataviz"
-ARG QUARTO_VERSION="1.8.26"
+ARG QUARTO_VERSION="1.11.9"
 
 USER root
 
@@ -17,13 +17,6 @@ RUN apt-get update -y \
 
 # Install VS Code
 ARG DEBIAN_FRONTEND=noninteractive
-RUN apt-get install -y gnupg \
-    && wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg \
-    && install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg \
-    && rm packages.microsoft.gpg \
-    && wget https://go.microsoft.com/fwlink/?LinkID=760868 -O vscode.deb \
-    && apt install -y ./vscode.deb \
-    && rm vscode.deb
 
 RUN apt update && apt upgrade -y \
   && apt-get install -y python3 python3-pip python3-venv \
