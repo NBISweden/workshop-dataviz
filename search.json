@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Advanced Data Visualization",
     "section": "",
-    "text": "Handle data in R for visualizations\nApply ggplot grammar to get publication-grade plots\nCombine different data and/or different plots\nPCA, Heatmaps, Phylogenetic trees and Maps\n\n\n\n\n\nUsing the language of graphics: ggplot2\nBasic and advanced plotting in ggplot2\nSingle-cell data visualizations with Seurat\nQuarto notebooks and reports\nDynamic plotting with Quarto\nInteractive web apps with Shiny\n\n\n\n\n\nHow to wrangle data correctly for ggplot\nWorking with geoms, aes, facets …\nCombine different plots to publication-grade\nPCA, Heatmaps and single-cell data visualization\nMaps and phylogenetic trees visualizations (for interested)\n\n\n\n\n\nQuarto syntax and functions\nDashboards with quarto\nDynamic plotting with plotly, crosstalk and others\n\n\n\n\n\nUI and Server\nReactivity and error validations\nModularization and deployment"
+    "text": "Handle data in R for visualizations\nApply ggplot grammar to get publication-grade plots\nCombine different data and/or different plots\nPCA, Heatmaps, Phylogenetic trees and Maps\n\n\n\n\n\nUsing the language of graphics: ggplot2\nBasic and advanced plotting in ggplot2\nSingle-cell data visualizations with Seurat\nQuarto notebooks and reports\nDynamic plotting with Quarto\nInteractive web apps with Shiny"
   },
   {
     "objectID": "index.html#topics",
@@ -46,7 +46,7 @@
     "href": "index.html#who-can-apply",
     "title": "Advanced Data Visualization",
     "section": "Who can apply?",
-    "text": "Who can apply?\n\n\nEligibility\n\n\nAudience: PhD students, postdocs and researchers in life sciences, healthcare and related fields\nBackground: Basic R experience needed\nEligibility: Swedish applicants are prioritized; international applicants are welcome\nResearch: To get the most from the workshop, one could try visualizing their own data during the course and we can help you.\n\n\n\n\nHow selection works\n\n\nCriteria: Entry requirements, motivation to attend, and gender and geographical balance are considered when applications exceed capacity\nPriority: PhD students are prioritized, followed by postdocs, PIs and other researchers\nMaster’s students: Accepted when seats are available\nInternational applicants: Accepted when seats are available\n\n\n\n\n:::\n\nNBIS training events do not provide formal university credits. If credits are essential, consult your home department before applying to establish whether it can recognize the workshop for credits. Participants with full attendance receive a certificate of participation stating the topics covered and the duration of the workshop."
+    "text": "Who can apply?\n\n\nEligibility\n\n\nAudience: PhD students, postdocs and researchers in life sciences, healthcare and related fields\nBackground: Basic R experience needed\nEligibility: Swedish applicants are prioritized; international applicants are welcome\nResearch: To get the most from the workshop, one could try visualizing their own data during the course and we can help you.\n\n\n\n\nHow selection works\n\n\nCriteria: Entry requirements, motivation to attend, and gender and geographical balance are considered when applications exceed capacity\nPriority: PhD students are prioritized, followed by postdocs, PIs and other researchers\nMaster’s students: Accepted when seats are available\nInternational applicants: Accepted when seats are available\n\n\n\n\n\nNBIS training events do not provide formal university credits. If credits are essential, consult your home department before applying to establish whether it can recognize the workshop for credits. Participants with full attendance receive a certificate of participation stating the topics covered and the duration of the workshop."
   },
   {
     "objectID": "index.html#upcoming-workshop",
@@ -67,6 +67,6 @@
     "href": "index.html#contact",
     "title": "Advanced Data Visualization",
     "section": "Contact",
-    "text": "Contact\n\n\nGet in touch\nLokeshwaran Manoharan & Katja Kozjek edu.plotting.r@nbis.se\n\n\nCode of conduct\nBy participating in this workshop, you agree to the NBIS Code of Conduct.\n\n\n\n\n\nAdvanced Data Visualization, a workshop created by National Bioinformatics Infrastructure (NBIS) in partnership with National Genomics Infrastructure (NGI) is licensed under CC BY-NC-SA 4.0"
+    "text": "Contact\n\n\nGet in touch\nLokeshwaran Manoharan & Katja Kozjek edu.plotting.r@nbis.se\n\n\nCode of conduct\nBy participating in this workshop, you agree to the NBIS Code of Conduct.\n\n\n\n\n\nAdvanced Data Visualization, a workshop created by National Bioinformatics Infrastructure (NBIS) and licensed under CC BY-NC-SA 4.0"
   }
 ]
