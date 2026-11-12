@@ -10,7 +10,7 @@ toastui:
     defaultView: week
     file: "schedule.tsv"
     file-sep: "\t"
-    date: "2026-05-05"
+    date: "2027-04-27"
     useDetailPopup: true
     isReadOnly: true
     height: 980px
@@ -24,8 +24,8 @@ toastui:
       workweek: true
       taskView: false
       eventView: ['time']
-      hourStart: 9
-      hourEnd: 21
+      hourStart: 7
+      hourEnd: 19
       showNowIndicator: false
     calendars:
       - id: "session"
