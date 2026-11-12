@@ -7,7 +7,7 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/quarto-contrib/revealjs-header/revealjs-header.js" defer="true"></script>
 <link href="../../site_libs/quarto-contrib/revealjs-header/revealjs-header.css" rel="stylesheet">
 <meta name="shinylive:serviceworker_dir" content="../..">
@@ -15,21 +15,27 @@
 <script src="../../site_libs/quarto-contrib/shinylive-0.9.1/shinylive/run-python-blocks.js" type="module"></script>
 <link href="../../site_libs/quarto-contrib/shinylive-0.9.1/shinylive/shinylive.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/shinylive-quarto-css/shinylive-quarto.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.26">
+  <meta name="generator" content="quarto-1.11.9">
 
   <meta name="author" content="Lokesh Mano">
   <meta name="keywords" content="bioinformatics, course, workshop, scilifelab, nbis">
   <title>Introduction to R Shiny</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
   <style>
-    code{white-space: pre-wrap;}
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -104,7 +110,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-400ff92a72c6c114171da642732660a3.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-4be5aaac130eba6b65d83215958e3cff.css">
   <link rel="stylesheet" href="assets/styles.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -207,7 +213,7 @@
   <link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
   <script src="../../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 <meta property="og:title" content="Introduction to R Shiny">
-<meta property="og:image" content="https://nbisweden.github.io/workshop-dataviz/topics/Shiny/assets/images/seo.webp">
+<meta property="og:image" content="https://nbisweden.github.io/workshop-dataviz/assets/images/seo.webp">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -221,7 +227,7 @@
         <h1 class="title">Introduction to R Shiny</h1>
                         <p class="author">Lokesh Mano</p>
                         <p class="institute">NBIS, SciLifeLab</p>
-                        <p class="date">11-Nov-2026</p>
+                        <p class="date">12-Nov-2026</p>
               </div>
       <div class="title-child-hero">
                 <div class="title-hero">
@@ -410,9 +416,9 @@
 <div class="code-with-filename-file">
 <pre><strong>app.r</strong></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>()</span>
-<span id="cb1-2"><a></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input,output) {}</span>
-<span id="cb1-3"><a></a><span class="fu">shinyApp</span>(<span class="at">ui=</span>ui,<span class="at">server=</span>server)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a aria-label="1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>()</span>
+<span id="cb1-2"><a aria-label="2"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input,output) {}</span>
+<span id="cb1-3"><a aria-label="3"></a><span class="fu">shinyApp</span>(<span class="at">ui=</span>ui,<span class="at">server=</span>server)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 <div class="fragment">
@@ -422,7 +428,7 @@
 <div class="code-with-filename-file">
 <pre><strong>ui.r</strong></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a aria-label="1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 <div class="cell">
@@ -430,7 +436,7 @@
 <div class="code-with-filename-file">
 <pre><strong>server.r</strong></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input,output) {}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a aria-label="1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input,output) {}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div>
@@ -449,10 +455,10 @@
 <li>Use <code>shinyApp()</code></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">shinyApp</span>(</span>
-<span id="cb4-2"><a></a>  <span class="at">ui=</span><span class="fu">fluidPage</span>(),</span>
-<span id="cb4-3"><a></a>  <span class="at">server=</span><span class="cf">function</span>(input,output) {}</span>
-<span id="cb4-4"><a></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-label="1"></a><span class="fu">shinyApp</span>(</span>
+<span id="cb4-2"><a aria-label="2"></a>  <span class="at">ui=</span><span class="fu">fluidPage</span>(),</span>
+<span id="cb4-3"><a aria-label="3"></a>  <span class="at">server=</span><span class="cf">function</span>(input,output) {}</span>
+<span id="cb4-4"><a aria-label="4"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 <div class="fragment">
@@ -473,24 +479,24 @@
 </section>
 <section id="ui" class="slide level2">
 <h2>UI</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6" data-engine="r"><pre class="sourceCode numberSource shinylive-r number-lines code-with-copy"><code class="sourceCode"><span id="cb6-1"><a></a>#| '!! shinylive warning !!': |</span>
-<span id="cb6-2"><a></a>#|   shinylive does not work in self-contained HTML documents.</span>
-<span id="cb6-3"><a></a>#|   Please set `embed-resources: false` in your metadata.</span>
-<span id="cb6-4"><a></a>#| standalone: true</span>
-<span id="cb6-5"><a></a>#| components: [editor, viewer]</span>
-<span id="cb6-6"><a></a>shinyApp(</span>
-<span id="cb6-7"><a></a>ui=fluidPage(</span>
-<span id="cb6-8"><a></a>  titlePanel("Title Panel"),</span>
-<span id="cb6-9"><a></a>  sidebarLayout(</span>
-<span id="cb6-10"><a></a>    sidebarPanel(</span>
-<span id="cb6-11"><a></a>      helpText("Sidebar Panel")</span>
-<span id="cb6-12"><a></a>    ),</span>
-<span id="cb6-13"><a></a>    mainPanel(</span>
-<span id="cb6-14"><a></a>      "hello"</span>
-<span id="cb6-15"><a></a>    )</span>
-<span id="cb6-16"><a></a>  )</span>
-<span id="cb6-17"><a></a>),</span>
-<span id="cb6-18"><a></a>server=function(input,output) {})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6" data-engine="r"><pre class="sourceCode numberSource shinylive-r number-lines code-with-copy"><code class="sourceCode"><span id="cb6-1"><a aria-label="1"></a>#| '!! shinylive warning !!': |</span>
+<span id="cb6-2"><a aria-label="2"></a>#|   shinylive does not work in self-contained HTML documents.</span>
+<span id="cb6-3"><a aria-label="3"></a>#|   Please set `embed-resources: false` in your metadata.</span>
+<span id="cb6-4"><a aria-label="4"></a>#| standalone: true</span>
+<span id="cb6-5"><a aria-label="5"></a>#| components: [editor, viewer]</span>
+<span id="cb6-6"><a aria-label="6"></a>shinyApp(</span>
+<span id="cb6-7"><a aria-label="7"></a>ui=fluidPage(</span>
+<span id="cb6-8"><a aria-label="8"></a>  titlePanel("Title Panel"),</span>
+<span id="cb6-9"><a aria-label="9"></a>  sidebarLayout(</span>
+<span id="cb6-10"><a aria-label="10"></a>    sidebarPanel(</span>
+<span id="cb6-11"><a aria-label="11"></a>      helpText("Sidebar Panel")</span>
+<span id="cb6-12"><a aria-label="12"></a>    ),</span>
+<span id="cb6-13"><a aria-label="13"></a>    mainPanel(</span>
+<span id="cb6-14"><a aria-label="14"></a>      "hello"</span>
+<span id="cb6-15"><a aria-label="15"></a>    )</span>
+<span id="cb6-16"><a aria-label="16"></a>  )</span>
+<span id="cb6-17"><a aria-label="17"></a>),</span>
+<span id="cb6-18"><a aria-label="18"></a>server=function(input,output) {})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="language-of-the-web-html-css-javascript" class="slide level2">
 <h2>Language of the web: HTML, CSS &amp; Javascript</h2>
@@ -502,7 +508,7 @@
 <li>Inspect with browser</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">sidebarPanel</span>(<span class="fu">helpText</span>(<span class="st">"Sidebar Panel"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a aria-label="1"></a><span class="fu">sidebarPanel</span>(<span class="fu">helpText</span>(<span class="st">"Sidebar Panel"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <pre><code>&lt;div class="col-sm-4"&gt;
   &lt;form class="well" role="complementary"&gt;
@@ -519,67 +525,67 @@
 </section>
 <section id="section-2" class="slide level2">
 <h2></h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9" data-engine="r"><pre class="sourceCode numberSource shinylive-r number-lines code-with-copy"><code class="sourceCode"><span id="cb9-1"><a></a>#| '!! shinylive warning !!': |</span>
-<span id="cb9-2"><a></a>#|   shinylive does not work in self-contained HTML documents.</span>
-<span id="cb9-3"><a></a>#|   Please set `embed-resources: false` in your metadata.</span>
-<span id="cb9-4"><a></a>#| standalone: true</span>
-<span id="cb9-5"><a></a>#| components: [editor, viewer]</span>
-<span id="cb9-6"><a></a>shinyApp(</span>
-<span id="cb9-7"><a></a>ui=fluidPage(</span>
-<span id="cb9-8"><a></a>  titlePanel("Title Panel"),</span>
-<span id="cb9-9"><a></a>  sidebarLayout(sidebarPanel(helpText("Sidebar Panel")),</span>
-<span id="cb9-10"><a></a>    mainPanel(tabsetPanel(</span>
-<span id="cb9-11"><a></a>                tabPanel("tab1",</span>
-<span id="cb9-12"><a></a>                         fluidRow(</span>
-<span id="cb9-13"><a></a>                           column(6,helpText("Col1")),</span>
-<span id="cb9-14"><a></a>                           column(6,</span>
-<span id="cb9-15"><a></a>                                  helpText("Col2"),</span>
-<span id="cb9-16"><a></a>                                  fluidRow(</span>
-<span id="cb9-17"><a></a>                                    column(4,style="background-color:#b0c6fb",helpText("Col2.1")),</span>
-<span id="cb9-18"><a></a>                                    column(4,style="background-color:#ffa153",helpText("Col2.2")),</span>
-<span id="cb9-19"><a></a>                                    column(4,style="background-color:#b1f6c6",helpText("Col2.3"))</span>
-<span id="cb9-20"><a></a>                                  )</span>
-<span id="cb9-21"><a></a>                           )</span>
-<span id="cb9-22"><a></a>                         )</span>
-<span id="cb9-23"><a></a>                ),</span>
-<span id="cb9-24"><a></a>                tabPanel("tab2",</span>
-<span id="cb9-25"><a></a>                         inputPanel(helpText("Input Panel"))</span>
-<span id="cb9-26"><a></a>                ),</span>
-<span id="cb9-27"><a></a>                tabPanel("tab3",</span>
-<span id="cb9-28"><a></a>                  wellPanel(helpText("Well Panel"))</span>
-<span id="cb9-29"><a></a>                )</span>
-<span id="cb9-30"><a></a>              )</span>
-<span id="cb9-31"><a></a>    )</span>
-<span id="cb9-32"><a></a>  )</span>
-<span id="cb9-33"><a></a>),</span>
-<span id="cb9-34"><a></a>server=function(input,output) {})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9" data-engine="r"><pre class="sourceCode numberSource shinylive-r number-lines code-with-copy"><code class="sourceCode"><span id="cb9-1"><a aria-label="1"></a>#| '!! shinylive warning !!': |</span>
+<span id="cb9-2"><a aria-label="2"></a>#|   shinylive does not work in self-contained HTML documents.</span>
+<span id="cb9-3"><a aria-label="3"></a>#|   Please set `embed-resources: false` in your metadata.</span>
+<span id="cb9-4"><a aria-label="4"></a>#| standalone: true</span>
+<span id="cb9-5"><a aria-label="5"></a>#| components: [editor, viewer]</span>
+<span id="cb9-6"><a aria-label="6"></a>shinyApp(</span>
+<span id="cb9-7"><a aria-label="7"></a>ui=fluidPage(</span>
+<span id="cb9-8"><a aria-label="8"></a>  titlePanel("Title Panel"),</span>
+<span id="cb9-9"><a aria-label="9"></a>  sidebarLayout(sidebarPanel(helpText("Sidebar Panel")),</span>
+<span id="cb9-10"><a aria-label="10"></a>    mainPanel(tabsetPanel(</span>
+<span id="cb9-11"><a aria-label="11"></a>                tabPanel("tab1",</span>
+<span id="cb9-12"><a aria-label="12"></a>                         fluidRow(</span>
+<span id="cb9-13"><a aria-label="13"></a>                           column(6,helpText("Col1")),</span>
+<span id="cb9-14"><a aria-label="14"></a>                           column(6,</span>
+<span id="cb9-15"><a aria-label="15"></a>                                  helpText("Col2"),</span>
+<span id="cb9-16"><a aria-label="16"></a>                                  fluidRow(</span>
+<span id="cb9-17"><a aria-label="17"></a>                                    column(4,style="background-color:#b0c6fb",helpText("Col2.1")),</span>
+<span id="cb9-18"><a aria-label="18"></a>                                    column(4,style="background-color:#ffa153",helpText("Col2.2")),</span>
+<span id="cb9-19"><a aria-label="19"></a>                                    column(4,style="background-color:#b1f6c6",helpText("Col2.3"))</span>
+<span id="cb9-20"><a aria-label="20"></a>                                  )</span>
+<span id="cb9-21"><a aria-label="21"></a>                           )</span>
+<span id="cb9-22"><a aria-label="22"></a>                         )</span>
+<span id="cb9-23"><a aria-label="23"></a>                ),</span>
+<span id="cb9-24"><a aria-label="24"></a>                tabPanel("tab2",</span>
+<span id="cb9-25"><a aria-label="25"></a>                         inputPanel(helpText("Input Panel"))</span>
+<span id="cb9-26"><a aria-label="26"></a>                ),</span>
+<span id="cb9-27"><a aria-label="27"></a>                tabPanel("tab3",</span>
+<span id="cb9-28"><a aria-label="28"></a>                  wellPanel(helpText("Well Panel"))</span>
+<span id="cb9-29"><a aria-label="29"></a>                )</span>
+<span id="cb9-30"><a aria-label="30"></a>              )</span>
+<span id="cb9-31"><a aria-label="31"></a>    )</span>
+<span id="cb9-32"><a aria-label="32"></a>  )</span>
+<span id="cb9-33"><a aria-label="33"></a>),</span>
+<span id="cb9-34"><a aria-label="34"></a>server=function(input,output) {})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="ui-widgets-input" class="slide level2">
 <h2>UI • Widgets • Input</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10" data-engine="r"><pre class="sourceCode numberSource shinylive-r number-lines code-with-copy"><code class="sourceCode"><span id="cb10-1"><a></a>#| '!! shinylive warning !!': |</span>
-<span id="cb10-2"><a></a>#|   shinylive does not work in self-contained HTML documents.</span>
-<span id="cb10-3"><a></a>#|   Please set `embed-resources: false` in your metadata.</span>
-<span id="cb10-4"><a></a>#| standalone: true</span>
-<span id="cb10-5"><a></a>#| components: [editor, viewer]</span>
-<span id="cb10-6"><a></a></span>
-<span id="cb10-7"><a></a>shinyApp(</span>
-<span id="cb10-8"><a></a>ui=fluidPage(</span>
-<span id="cb10-9"><a></a>  fluidRow(</span>
-<span id="cb10-10"><a></a>    column(4,</span>
-<span id="cb10-11"><a></a>           selectInput("select-input",</span>
-<span id="cb10-12"><a></a>                       label="selectInput",</span>
-<span id="cb10-13"><a></a>                       choices=c("A","B","C")),</span>
-<span id="cb10-14"><a></a>    )</span>
-<span id="cb10-15"><a></a>  )</span>
-<span id="cb10-16"><a></a>),</span>
-<span id="cb10-17"><a></a>server=function(input,output) {</span>
-<span id="cb10-18"><a></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10" data-engine="r"><pre class="sourceCode numberSource shinylive-r number-lines code-with-copy"><code class="sourceCode"><span id="cb10-1"><a aria-label="1"></a>#| '!! shinylive warning !!': |</span>
+<span id="cb10-2"><a aria-label="2"></a>#|   shinylive does not work in self-contained HTML documents.</span>
+<span id="cb10-3"><a aria-label="3"></a>#|   Please set `embed-resources: false` in your metadata.</span>
+<span id="cb10-4"><a aria-label="4"></a>#| standalone: true</span>
+<span id="cb10-5"><a aria-label="5"></a>#| components: [editor, viewer]</span>
+<span id="cb10-6"><a aria-label="6"></a></span>
+<span id="cb10-7"><a aria-label="7"></a>shinyApp(</span>
+<span id="cb10-8"><a aria-label="8"></a>ui=fluidPage(</span>
+<span id="cb10-9"><a aria-label="9"></a>  fluidRow(</span>
+<span id="cb10-10"><a aria-label="10"></a>    column(4,</span>
+<span id="cb10-11"><a aria-label="11"></a>           selectInput("select-input",</span>
+<span id="cb10-12"><a aria-label="12"></a>                       label="selectInput",</span>
+<span id="cb10-13"><a aria-label="13"></a>                       choices=c("A","B","C")),</span>
+<span id="cb10-14"><a aria-label="14"></a>    )</span>
+<span id="cb10-15"><a aria-label="15"></a>  )</span>
+<span id="cb10-16"><a aria-label="16"></a>),</span>
+<span id="cb10-17"><a aria-label="17"></a>server=function(input,output) {</span>
+<span id="cb10-18"><a aria-label="18"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="fragment">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>?selectInput</span>
-<span id="cb11-2"><a></a><span class="fu">selectInput</span>(inputId, label, choices, <span class="at">selected =</span> <span class="cn">NULL</span>, <span class="at">multiple =</span> <span class="cn">FALSE</span>, </span>
-<span id="cb11-3"><a></a>            <span class="at">selectize =</span> <span class="cn">TRUE</span>, <span class="at">width =</span> <span class="cn">NULL</span>, <span class="at">size =</span> <span class="cn">NULL</span></span>
-<span id="cb11-4"><a></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a aria-label="1"></a>?selectInput</span>
+<span id="cb11-2"><a aria-label="2"></a><span class="fu">selectInput</span>(inputId, label, choices, <span class="at">selected =</span> <span class="cn">NULL</span>, <span class="at">multiple =</span> <span class="cn">FALSE</span>, </span>
+<span id="cb11-3"><a aria-label="3"></a>            <span class="at">selectize =</span> <span class="cn">TRUE</span>, <span class="at">width =</span> <span class="cn">NULL</span>, <span class="at">size =</span> <span class="cn">NULL</span></span>
+<span id="cb11-4"><a aria-label="4"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <ul>
 <li>Input ID has to be unique</li>
@@ -588,36 +594,36 @@
 </section>
 <section id="ui-widgets-input-1" class="slide level2">
 <h2>UI • Widgets • Input</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12" data-engine="r"><pre class="sourceCode numberSource shinylive-r number-lines code-with-copy"><code class="sourceCode"><span id="cb12-1"><a></a>#| '!! shinylive warning !!': |</span>
-<span id="cb12-2"><a></a>#|   shinylive does not work in self-contained HTML documents.</span>
-<span id="cb12-3"><a></a>#|   Please set `embed-resources: false` in your metadata.</span>
-<span id="cb12-4"><a></a>#| standalone: true</span>
-<span id="cb12-5"><a></a>#| components: [editor, viewer]</span>
-<span id="cb12-6"><a></a></span>
-<span id="cb12-7"><a></a>shinyApp(</span>
-<span id="cb12-8"><a></a>ui=fluidPage(</span>
-<span id="cb12-9"><a></a>  fluidRow(</span>
-<span id="cb12-10"><a></a>    column(4,</span>
-<span id="cb12-11"><a></a>           fileInput("file-input","fileInput:"),</span>
-<span id="cb12-12"><a></a>           selectInput("select-input",label="selectInput",choices=c("A","B","C")),</span>
-<span id="cb12-13"><a></a>           sliderInput("slider-input",label="sliderInput",value=5,min=1,max=10),</span>
-<span id="cb12-14"><a></a>           numericInput("numeric-input",label="numericInput",value=5,min=1,max=10),</span>
-<span id="cb12-15"><a></a>           textInput("text-input",label="textInput"),</span>
-<span id="cb12-16"><a></a>           textAreaInput("text-area-input",label="textAreaInput"),</span>
-<span id="cb12-17"><a></a>           dateInput("date-input",label="dateInput"),</span>
-<span id="cb12-18"><a></a>           dateRangeInput("date-range-input",label="dateRangeInput"),</span>
-<span id="cb12-19"><a></a>           radioButtons("radio-button",label="radioButtons",choices=c("A","B","C"),inline=T),</span>
-<span id="cb12-20"><a></a>           checkboxInput("checkbox","checkboxInput",value=FALSE),</span>
-<span id="cb12-21"><a></a>           actionButton("action-button","Action"),</span>
-<span id="cb12-22"><a></a>           hr(),</span>
-<span id="cb12-23"><a></a>           submitButton()</span>
-<span id="cb12-24"><a></a>    )</span>
-<span id="cb12-25"><a></a>  )</span>
-<span id="cb12-26"><a></a>),</span>
-<span id="cb12-27"><a></a>server=function(input,output) {</span>
-<span id="cb12-28"><a></a>})</span>
-<span id="cb12-29"><a></a></span>
-<span id="cb12-30"><a></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12" data-engine="r"><pre class="sourceCode numberSource shinylive-r number-lines code-with-copy"><code class="sourceCode"><span id="cb12-1"><a aria-label="1"></a>#| '!! shinylive warning !!': |</span>
+<span id="cb12-2"><a aria-label="2"></a>#|   shinylive does not work in self-contained HTML documents.</span>
+<span id="cb12-3"><a aria-label="3"></a>#|   Please set `embed-resources: false` in your metadata.</span>
+<span id="cb12-4"><a aria-label="4"></a>#| standalone: true</span>
+<span id="cb12-5"><a aria-label="5"></a>#| components: [editor, viewer]</span>
+<span id="cb12-6"><a aria-label="6"></a></span>
+<span id="cb12-7"><a aria-label="7"></a>shinyApp(</span>
+<span id="cb12-8"><a aria-label="8"></a>ui=fluidPage(</span>
+<span id="cb12-9"><a aria-label="9"></a>  fluidRow(</span>
+<span id="cb12-10"><a aria-label="10"></a>    column(4,</span>
+<span id="cb12-11"><a aria-label="11"></a>           fileInput("file-input","fileInput:"),</span>
+<span id="cb12-12"><a aria-label="12"></a>           selectInput("select-input",label="selectInput",choices=c("A","B","C")),</span>
+<span id="cb12-13"><a aria-label="13"></a>           sliderInput("slider-input",label="sliderInput",value=5,min=1,max=10),</span>
+<span id="cb12-14"><a aria-label="14"></a>           numericInput("numeric-input",label="numericInput",value=5,min=1,max=10),</span>
+<span id="cb12-15"><a aria-label="15"></a>           textInput("text-input",label="textInput"),</span>
+<span id="cb12-16"><a aria-label="16"></a>           textAreaInput("text-area-input",label="textAreaInput"),</span>
+<span id="cb12-17"><a aria-label="17"></a>           dateInput("date-input",label="dateInput"),</span>
+<span id="cb12-18"><a aria-label="18"></a>           dateRangeInput("date-range-input",label="dateRangeInput"),</span>
+<span id="cb12-19"><a aria-label="19"></a>           radioButtons("radio-button",label="radioButtons",choices=c("A","B","C"),inline=T),</span>
+<span id="cb12-20"><a aria-label="20"></a>           checkboxInput("checkbox","checkboxInput",value=FALSE),</span>
+<span id="cb12-21"><a aria-label="21"></a>           actionButton("action-button","Action"),</span>
+<span id="cb12-22"><a aria-label="22"></a>           hr(),</span>
+<span id="cb12-23"><a aria-label="23"></a>           submitButton()</span>
+<span id="cb12-24"><a aria-label="24"></a>    )</span>
+<span id="cb12-25"><a aria-label="25"></a>  )</span>
+<span id="cb12-26"><a aria-label="26"></a>),</span>
+<span id="cb12-27"><a aria-label="27"></a>server=function(input,output) {</span>
+<span id="cb12-28"><a aria-label="28"></a>})</span>
+<span id="cb12-29"><a aria-label="29"></a></span>
+<span id="cb12-30"><a aria-label="30"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><span class="smaller"><a href="https://shiny.posit.co/r/gallery/widgets/widget-gallery/">Widgets gallery</a></span></p>
 <aside class="notes">
 <p>Widgets are visual objects on a page to allow for data input. Input and output variables.</p>
@@ -727,23 +733,23 @@
 </section>
 <section id="ui-widgets-outputs" class="slide level2">
 <h2>UI • Widgets • Outputs</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13" data-engine="r"><pre class="sourceCode numberSource shinylive-r number-lines code-with-copy"><code class="sourceCode"><span id="cb13-1"><a></a>#| '!! shinylive warning !!': |</span>
-<span id="cb13-2"><a></a>#|   shinylive does not work in self-contained HTML documents.</span>
-<span id="cb13-3"><a></a>#|   Please set `embed-resources: false` in your metadata.</span>
-<span id="cb13-4"><a></a>#| standalone: true</span>
-<span id="cb13-5"><a></a>#| components: [editor, viewer]</span>
-<span id="cb13-6"><a></a>shinyApp(</span>
-<span id="cb13-7"><a></a>ui=fluidPage(</span>
-<span id="cb13-8"><a></a>           textInput("text_input",label="textInput",value="hello world"),</span>
-<span id="cb13-9"><a></a>           textOutput("text_output")</span>
-<span id="cb13-10"><a></a>    ),</span>
-<span id="cb13-11"><a></a>server=function(input, output) {</span>
-<span id="cb13-12"><a></a>  output$text_output &lt;- renderText({input$text_input})</span>
-<span id="cb13-13"><a></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13" data-engine="r"><pre class="sourceCode numberSource shinylive-r number-lines code-with-copy"><code class="sourceCode"><span id="cb13-1"><a aria-label="1"></a>#| '!! shinylive warning !!': |</span>
+<span id="cb13-2"><a aria-label="2"></a>#|   shinylive does not work in self-contained HTML documents.</span>
+<span id="cb13-3"><a aria-label="3"></a>#|   Please set `embed-resources: false` in your metadata.</span>
+<span id="cb13-4"><a aria-label="4"></a>#| standalone: true</span>
+<span id="cb13-5"><a aria-label="5"></a>#| components: [editor, viewer]</span>
+<span id="cb13-6"><a aria-label="6"></a>shinyApp(</span>
+<span id="cb13-7"><a aria-label="7"></a>ui=fluidPage(</span>
+<span id="cb13-8"><a aria-label="8"></a>           textInput("text_input",label="textInput",value="hello world"),</span>
+<span id="cb13-9"><a aria-label="9"></a>           textOutput("text_output")</span>
+<span id="cb13-10"><a aria-label="10"></a>    ),</span>
+<span id="cb13-11"><a aria-label="11"></a>server=function(input, output) {</span>
+<span id="cb13-12"><a aria-label="12"></a>  output$text_output &lt;- renderText({input$text_input})</span>
+<span id="cb13-13"><a aria-label="13"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="fragment">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>?textOutput</span>
-<span id="cb14-2"><a></a><span class="fu">textOutput</span>(outputId)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a aria-label="1"></a>?textOutput</span>
+<span id="cb14-2"><a aria-label="2"></a><span class="fu">textOutput</span>(outputId)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <ul>
 <li>Output ID has to be unique</li>
@@ -752,31 +758,31 @@
 </section>
 <section id="ui-widgets-outputs-1" class="slide level2">
 <h2>UI • Widgets • Outputs</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15" data-engine="r"><pre class="sourceCode numberSource shinylive-r number-lines code-with-copy"><code class="sourceCode"><span id="cb15-1"><a></a>#| '!! shinylive warning !!': |</span>
-<span id="cb15-2"><a></a>#|   shinylive does not work in self-contained HTML documents.</span>
-<span id="cb15-3"><a></a>#|   Please set `embed-resources: false` in your metadata.</span>
-<span id="cb15-4"><a></a>#| standalone: true</span>
-<span id="cb15-5"><a></a>#| components: [editor, viewer]</span>
-<span id="cb15-6"><a></a>shinyApp(</span>
-<span id="cb15-7"><a></a>ui=fluidPage(fluidRow(column(5,</span>
-<span id="cb15-8"><a></a>           textInput("text_input",label="textInput",value="&lt;h3 style='color:red'&gt;Red text&lt;/h3&gt;"),</span>
-<span id="cb15-9"><a></a>           hr(),</span>
-<span id="cb15-10"><a></a>           htmlOutput("html_output"),</span>
-<span id="cb15-11"><a></a>           textOutput("text_output"),</span>
-<span id="cb15-12"><a></a>           verbatimTextOutput("verbatim_text_output"),</span>
-<span id="cb15-13"><a></a>           tableOutput("table_output"),</span>
-<span id="cb15-14"><a></a>           plotOutput("plot_output",width="300px",height="300px")</span>
-<span id="cb15-15"><a></a>    ))),</span>
-<span id="cb15-16"><a></a></span>
-<span id="cb15-17"><a></a>server=function(input, output) {</span>
-<span id="cb15-18"><a></a>  output$html_output &lt;- renderText({input$text_input})</span>
-<span id="cb15-19"><a></a>  output$text_output &lt;- renderText({input$text_input})</span>
-<span id="cb15-20"><a></a>  output$verbatim_text_output &lt;- renderText({input$text_input})</span>
-<span id="cb15-21"><a></a>  output$table_output &lt;- renderTable({iris[1:3,1:3]})</span>
-<span id="cb15-22"><a></a>  output$plot_output &lt;- renderPlot({</span>
-<span id="cb15-23"><a></a>    plot(iris[,1],iris[,2])</span>
-<span id="cb15-24"><a></a>  })</span>
-<span id="cb15-25"><a></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15" data-engine="r"><pre class="sourceCode numberSource shinylive-r number-lines code-with-copy"><code class="sourceCode"><span id="cb15-1"><a aria-label="1"></a>#| '!! shinylive warning !!': |</span>
+<span id="cb15-2"><a aria-label="2"></a>#|   shinylive does not work in self-contained HTML documents.</span>
+<span id="cb15-3"><a aria-label="3"></a>#|   Please set `embed-resources: false` in your metadata.</span>
+<span id="cb15-4"><a aria-label="4"></a>#| standalone: true</span>
+<span id="cb15-5"><a aria-label="5"></a>#| components: [editor, viewer]</span>
+<span id="cb15-6"><a aria-label="6"></a>shinyApp(</span>
+<span id="cb15-7"><a aria-label="7"></a>ui=fluidPage(fluidRow(column(5,</span>
+<span id="cb15-8"><a aria-label="8"></a>           textInput("text_input",label="textInput",value="&lt;h3 style='color:red'&gt;Red text&lt;/h3&gt;"),</span>
+<span id="cb15-9"><a aria-label="9"></a>           hr(),</span>
+<span id="cb15-10"><a aria-label="10"></a>           htmlOutput("html_output"),</span>
+<span id="cb15-11"><a aria-label="11"></a>           textOutput("text_output"),</span>
+<span id="cb15-12"><a aria-label="12"></a>           verbatimTextOutput("verbatim_text_output"),</span>
+<span id="cb15-13"><a aria-label="13"></a>           tableOutput("table_output"),</span>
+<span id="cb15-14"><a aria-label="14"></a>           plotOutput("plot_output",width="300px",height="300px")</span>
+<span id="cb15-15"><a aria-label="15"></a>    ))),</span>
+<span id="cb15-16"><a aria-label="16"></a></span>
+<span id="cb15-17"><a aria-label="17"></a>server=function(input, output) {</span>
+<span id="cb15-18"><a aria-label="18"></a>  output$html_output &lt;- renderText({input$text_input})</span>
+<span id="cb15-19"><a aria-label="19"></a>  output$text_output &lt;- renderText({input$text_input})</span>
+<span id="cb15-20"><a aria-label="20"></a>  output$verbatim_text_output &lt;- renderText({input$text_input})</span>
+<span id="cb15-21"><a aria-label="21"></a>  output$table_output &lt;- renderTable({iris[1:3,1:3]})</span>
+<span id="cb15-22"><a aria-label="22"></a>  output$plot_output &lt;- renderPlot({</span>
+<span id="cb15-23"><a aria-label="23"></a>    plot(iris[,1],iris[,2])</span>
+<span id="cb15-24"><a aria-label="24"></a>  })</span>
+<span id="cb15-25"><a aria-label="25"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="ui-widgets-output-functions" class="slide level2">
 <h2>UI • Widgets • Output Functions</h2>
@@ -829,23 +835,23 @@
 </section>
 <section id="a-complete-app" class="slide level2">
 <h2>A complete app</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16" data-engine="r"><pre class="sourceCode numberSource shinylive-r number-lines code-with-copy"><code class="sourceCode"><span id="cb16-1"><a></a>#| '!! shinylive warning !!': |</span>
-<span id="cb16-2"><a></a>#|   shinylive does not work in self-contained HTML documents.</span>
-<span id="cb16-3"><a></a>#|   Please set `embed-resources: false` in your metadata.</span>
-<span id="cb16-4"><a></a>#| standalone: true</span>
-<span id="cb16-5"><a></a>#| components: [editor, viewer]</span>
-<span id="cb16-6"><a></a>shinyApp(</span>
-<span id="cb16-7"><a></a>ui = fluidPage(</span>
-<span id="cb16-8"><a></a>  h3("Temperature Converter"),</span>
-<span id="cb16-9"><a></a>  numericInput("celsius", "Degrees Celsius:", value = 0),</span>
-<span id="cb16-10"><a></a>  textOutput("fahrenheit")</span>
-<span id="cb16-11"><a></a>),</span>
-<span id="cb16-12"><a></a></span>
-<span id="cb16-13"><a></a>server = function(input, output) {</span>
-<span id="cb16-14"><a></a>  output$fahrenheit &lt;- renderText({</span>
-<span id="cb16-15"><a></a>    paste(input$celsius, "°C is ", (input$celsius * 9/5) + 32, " °F")</span>
-<span id="cb16-16"><a></a>  })</span>
-<span id="cb16-17"><a></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16" data-engine="r"><pre class="sourceCode numberSource shinylive-r number-lines code-with-copy"><code class="sourceCode"><span id="cb16-1"><a aria-label="1"></a>#| '!! shinylive warning !!': |</span>
+<span id="cb16-2"><a aria-label="2"></a>#|   shinylive does not work in self-contained HTML documents.</span>
+<span id="cb16-3"><a aria-label="3"></a>#|   Please set `embed-resources: false` in your metadata.</span>
+<span id="cb16-4"><a aria-label="4"></a>#| standalone: true</span>
+<span id="cb16-5"><a aria-label="5"></a>#| components: [editor, viewer]</span>
+<span id="cb16-6"><a aria-label="6"></a>shinyApp(</span>
+<span id="cb16-7"><a aria-label="7"></a>ui = fluidPage(</span>
+<span id="cb16-8"><a aria-label="8"></a>  h3("Temperature Converter"),</span>
+<span id="cb16-9"><a aria-label="9"></a>  numericInput("celsius", "Degrees Celsius:", value = 0),</span>
+<span id="cb16-10"><a aria-label="10"></a>  textOutput("fahrenheit")</span>
+<span id="cb16-11"><a aria-label="11"></a>),</span>
+<span id="cb16-12"><a aria-label="12"></a></span>
+<span id="cb16-13"><a aria-label="13"></a>server = function(input, output) {</span>
+<span id="cb16-14"><a aria-label="14"></a>  output$fahrenheit &lt;- renderText({</span>
+<span id="cb16-15"><a aria-label="15"></a>    paste(input$celsius, "°C is ", (input$celsius * 9/5) + 32, " °F")</span>
+<span id="cb16-16"><a aria-label="16"></a>  })</span>
+<span id="cb16-17"><a aria-label="17"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="dynamic-ui" class="slide level2">
 <h2>Dynamic UI</h2>
@@ -854,31 +860,31 @@
 </ul>
 <div class="fragment">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17" data-code-line-numbers="4,10-16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">shinyApp</span>(</span>
-<span id="cb17-2"><a></a><span class="at">ui=</span><span class="fu">fluidPage</span>(</span>
-<span id="cb17-3"><a></a>  <span class="fu">selectInput</span>(<span class="st">"type"</span>,<span class="at">label=</span><span class="st">"Select input type"</span>, <span class="at">choices=</span><span class="fu">c</span>(<span class="st">"Text"</span>,<span class="st">"Number"</span>)),</span>
-<span id="cb17-4"><a></a>  <span class="fu">uiOutput</span>(<span class="st">"ui"</span>),</span>
-<span id="cb17-5"><a></a>  <span class="fu">textOutput</span>(<span class="st">"text_output"</span>),</span>
-<span id="cb17-6"><a></a>),</span>
-<span id="cb17-7"><a></a></span>
-<span id="cb17-8"><a></a><span class="at">server=</span><span class="cf">function</span>(input, output) {</span>
-<span id="cb17-9"><a></a>  </span>
-<span id="cb17-10"><a></a> output<span class="sc">$</span>ui <span class="ot">&lt;-</span> <span class="fu">renderUI</span>({</span>
-<span id="cb17-11"><a></a>    <span class="cf">if</span>(input<span class="sc">$</span>type<span class="sc">==</span><span class="st">"Text"</span>) {</span>
-<span id="cb17-12"><a></a>      <span class="fu">textInput</span>(<span class="st">"input_text"</span>,<span class="st">"Enter text"</span>)</span>
-<span id="cb17-13"><a></a>    }<span class="cf">else</span>{</span>
-<span id="cb17-14"><a></a>      <span class="fu">sliderInput</span>(<span class="st">"input_number"</span>, <span class="st">"Select number"</span>, <span class="at">value=</span><span class="dv">5</span>, <span class="at">min=</span><span class="dv">1</span>, <span class="at">max=</span><span class="dv">10</span>)</span>
-<span id="cb17-15"><a></a>    }</span>
-<span id="cb17-16"><a></a>  })</span>
-<span id="cb17-17"><a></a>  </span>
-<span id="cb17-18"><a></a>  output<span class="sc">$</span>text_output <span class="ot">&lt;-</span> <span class="fu">renderText</span>({</span>
-<span id="cb17-19"><a></a>    <span class="cf">if</span>(input<span class="sc">$</span>type<span class="sc">==</span><span class="st">"Text"</span>) {</span>
-<span id="cb17-20"><a></a>      input<span class="sc">$</span>input_text</span>
-<span id="cb17-21"><a></a>    }<span class="cf">else</span>{</span>
-<span id="cb17-22"><a></a>      input<span class="sc">$</span>input_number</span>
-<span id="cb17-23"><a></a>    }</span>
-<span id="cb17-24"><a></a>  })</span>
-<span id="cb17-25"><a></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17" data-code-line-numbers="4,10-16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a aria-label="1"></a><span class="fu">shinyApp</span>(</span>
+<span id="cb17-2"><a aria-label="2"></a><span class="at">ui=</span><span class="fu">fluidPage</span>(</span>
+<span id="cb17-3"><a aria-label="3"></a>  <span class="fu">selectInput</span>(<span class="st">"type"</span>,<span class="at">label=</span><span class="st">"Select input type"</span>, <span class="at">choices=</span><span class="fu">c</span>(<span class="st">"Text"</span>,<span class="st">"Number"</span>)),</span>
+<span id="cb17-4"><a aria-label="4"></a>  <span class="fu">uiOutput</span>(<span class="st">"ui"</span>),</span>
+<span id="cb17-5"><a aria-label="5"></a>  <span class="fu">textOutput</span>(<span class="st">"text_output"</span>),</span>
+<span id="cb17-6"><a aria-label="6"></a>),</span>
+<span id="cb17-7"><a aria-label="7"></a></span>
+<span id="cb17-8"><a aria-label="8"></a><span class="at">server=</span><span class="cf">function</span>(input, output) {</span>
+<span id="cb17-9"><a aria-label="9"></a>  </span>
+<span id="cb17-10"><a aria-label="10"></a> output<span class="sc">$</span>ui <span class="ot">&lt;-</span> <span class="fu">renderUI</span>({</span>
+<span id="cb17-11"><a aria-label="11"></a>    <span class="cf">if</span>(input<span class="sc">$</span>type<span class="sc">==</span><span class="st">"Text"</span>) {</span>
+<span id="cb17-12"><a aria-label="12"></a>      <span class="fu">textInput</span>(<span class="st">"input_text"</span>,<span class="st">"Enter text"</span>)</span>
+<span id="cb17-13"><a aria-label="13"></a>    }<span class="cf">else</span>{</span>
+<span id="cb17-14"><a aria-label="14"></a>      <span class="fu">sliderInput</span>(<span class="st">"input_number"</span>, <span class="st">"Select number"</span>, <span class="at">value=</span><span class="dv">5</span>, <span class="at">min=</span><span class="dv">1</span>, <span class="at">max=</span><span class="dv">10</span>)</span>
+<span id="cb17-15"><a aria-label="15"></a>    }</span>
+<span id="cb17-16"><a aria-label="16"></a>  })</span>
+<span id="cb17-17"><a aria-label="17"></a>  </span>
+<span id="cb17-18"><a aria-label="18"></a>  output<span class="sc">$</span>text_output <span class="ot">&lt;-</span> <span class="fu">renderText</span>({</span>
+<span id="cb17-19"><a aria-label="19"></a>    <span class="cf">if</span>(input<span class="sc">$</span>type<span class="sc">==</span><span class="st">"Text"</span>) {</span>
+<span id="cb17-20"><a aria-label="20"></a>      input<span class="sc">$</span>input_text</span>
+<span id="cb17-21"><a aria-label="21"></a>    }<span class="cf">else</span>{</span>
+<span id="cb17-22"><a aria-label="22"></a>      input<span class="sc">$</span>input_number</span>
+<span id="cb17-23"><a aria-label="23"></a>    }</span>
+<span id="cb17-24"><a aria-label="24"></a>  })</span>
+<span id="cb17-25"><a aria-label="25"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 <div class="fragment">
@@ -889,95 +895,95 @@
 </section>
 <section id="rendering-ui" class="slide level2">
 <h2>Rendering UI</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18" data-engine="r"><pre class="sourceCode numberSource shinylive-r number-lines code-with-copy"><code class="sourceCode"><span id="cb18-1"><a></a>#| '!! shinylive warning !!': |</span>
-<span id="cb18-2"><a></a>#|   shinylive does not work in self-contained HTML documents.</span>
-<span id="cb18-3"><a></a>#|   Please set `embed-resources: false` in your metadata.</span>
-<span id="cb18-4"><a></a>#| standalone: true</span>
-<span id="cb18-5"><a></a>#| components: [editor, viewer]</span>
-<span id="cb18-6"><a></a>shinyApp(</span>
-<span id="cb18-7"><a></a>ui=fluidPage(</span>
-<span id="cb18-8"><a></a>  selectInput("type", label="Select input type", choices=c("Text","Number")),</span>
-<span id="cb18-9"><a></a>  uiOutput("ui"),</span>
-<span id="cb18-10"><a></a>  textOutput("text_output"),</span>
-<span id="cb18-11"><a></a>),</span>
-<span id="cb18-12"><a></a></span>
-<span id="cb18-13"><a></a>server=function(input, output) {</span>
-<span id="cb18-14"><a></a>  </span>
-<span id="cb18-15"><a></a> output$ui &lt;- renderUI({</span>
-<span id="cb18-16"><a></a>    if(input$type=="Text") {</span>
-<span id="cb18-17"><a></a>      textInput("input_text", "Enter text", value="hello")</span>
-<span id="cb18-18"><a></a>    }else{</span>
-<span id="cb18-19"><a></a>      sliderInput("input_number", "Select number", value=5, min=1, max=10)</span>
-<span id="cb18-20"><a></a>    }</span>
-<span id="cb18-21"><a></a>  })</span>
-<span id="cb18-22"><a></a>  </span>
-<span id="cb18-23"><a></a>  output$text_output &lt;- renderText({</span>
-<span id="cb18-24"><a></a>    if(input$type=="Text") {</span>
-<span id="cb18-25"><a></a>      input$input_text</span>
-<span id="cb18-26"><a></a>    }else{</span>
-<span id="cb18-27"><a></a>      input$input_number</span>
-<span id="cb18-28"><a></a>    }</span>
-<span id="cb18-29"><a></a>  })</span>
-<span id="cb18-30"><a></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18" data-engine="r"><pre class="sourceCode numberSource shinylive-r number-lines code-with-copy"><code class="sourceCode"><span id="cb18-1"><a aria-label="1"></a>#| '!! shinylive warning !!': |</span>
+<span id="cb18-2"><a aria-label="2"></a>#|   shinylive does not work in self-contained HTML documents.</span>
+<span id="cb18-3"><a aria-label="3"></a>#|   Please set `embed-resources: false` in your metadata.</span>
+<span id="cb18-4"><a aria-label="4"></a>#| standalone: true</span>
+<span id="cb18-5"><a aria-label="5"></a>#| components: [editor, viewer]</span>
+<span id="cb18-6"><a aria-label="6"></a>shinyApp(</span>
+<span id="cb18-7"><a aria-label="7"></a>ui=fluidPage(</span>
+<span id="cb18-8"><a aria-label="8"></a>  selectInput("type", label="Select input type", choices=c("Text","Number")),</span>
+<span id="cb18-9"><a aria-label="9"></a>  uiOutput("ui"),</span>
+<span id="cb18-10"><a aria-label="10"></a>  textOutput("text_output"),</span>
+<span id="cb18-11"><a aria-label="11"></a>),</span>
+<span id="cb18-12"><a aria-label="12"></a></span>
+<span id="cb18-13"><a aria-label="13"></a>server=function(input, output) {</span>
+<span id="cb18-14"><a aria-label="14"></a>  </span>
+<span id="cb18-15"><a aria-label="15"></a> output$ui &lt;- renderUI({</span>
+<span id="cb18-16"><a aria-label="16"></a>    if(input$type=="Text") {</span>
+<span id="cb18-17"><a aria-label="17"></a>      textInput("input_text", "Enter text", value="hello")</span>
+<span id="cb18-18"><a aria-label="18"></a>    }else{</span>
+<span id="cb18-19"><a aria-label="19"></a>      sliderInput("input_number", "Select number", value=5, min=1, max=10)</span>
+<span id="cb18-20"><a aria-label="20"></a>    }</span>
+<span id="cb18-21"><a aria-label="21"></a>  })</span>
+<span id="cb18-22"><a aria-label="22"></a>  </span>
+<span id="cb18-23"><a aria-label="23"></a>  output$text_output &lt;- renderText({</span>
+<span id="cb18-24"><a aria-label="24"></a>    if(input$type=="Text") {</span>
+<span id="cb18-25"><a aria-label="25"></a>      input$input_text</span>
+<span id="cb18-26"><a aria-label="26"></a>    }else{</span>
+<span id="cb18-27"><a aria-label="27"></a>      input$input_number</span>
+<span id="cb18-28"><a aria-label="28"></a>    }</span>
+<span id="cb18-29"><a aria-label="29"></a>  })</span>
+<span id="cb18-30"><a aria-label="30"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="rendering-ui-1" class="slide level2">
 <h2>Rendering UI</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19" data-engine="r"><pre class="sourceCode numberSource shinylive-r number-lines code-with-copy"><code class="sourceCode"><span id="cb19-1"><a></a>#| '!! shinylive warning !!': |</span>
-<span id="cb19-2"><a></a>#|   shinylive does not work in self-contained HTML documents.</span>
-<span id="cb19-3"><a></a>#|   Please set `embed-resources: false` in your metadata.</span>
-<span id="cb19-4"><a></a>#| standalone: true</span>
-<span id="cb19-5"><a></a>#| components: [editor, viewer]</span>
-<span id="cb19-6"><a></a></span>
-<span id="cb19-7"><a></a>shinyApp(</span>
-<span id="cb19-8"><a></a>ui=fluidPage(</span>
-<span id="cb19-9"><a></a>  selectInput("data",label="Select data",</span>
-<span id="cb19-10"><a></a>              choices=c("mtcars","faithful","iris")),</span>
-<span id="cb19-11"><a></a>  tableOutput("table"),</span>
-<span id="cb19-12"><a></a>  uiOutput("ui")</span>
-<span id="cb19-13"><a></a>),</span>
-<span id="cb19-14"><a></a></span>
-<span id="cb19-15"><a></a>server=function(input, output) {</span>
-<span id="cb19-16"><a></a>  </span>
-<span id="cb19-17"><a></a>  data &lt;- reactive({ get(input$data, 'package:datasets') })</span>
-<span id="cb19-18"><a></a>  </span>
-<span id="cb19-19"><a></a> output$ui &lt;- renderUI({</span>
-<span id="cb19-20"><a></a>  if(input$data=="iris") plotOutput("plot",width="400px")</span>
-<span id="cb19-21"><a></a>  })</span>
-<span id="cb19-22"><a></a>  </span>
-<span id="cb19-23"><a></a>  output$plot &lt;- renderPlot({hist(data()[, 1])})</span>
-<span id="cb19-24"><a></a>  output$table &lt;- renderTable({head(data())})</span>
-<span id="cb19-25"><a></a>})</span>
-<span id="cb19-26"><a></a></span>
-<span id="cb19-27"><a></a></span>
-<span id="cb19-28"><a></a></span>
-<span id="cb19-29"><a></a></span>
-<span id="cb19-30"><a></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19" data-engine="r"><pre class="sourceCode numberSource shinylive-r number-lines code-with-copy"><code class="sourceCode"><span id="cb19-1"><a aria-label="1"></a>#| '!! shinylive warning !!': |</span>
+<span id="cb19-2"><a aria-label="2"></a>#|   shinylive does not work in self-contained HTML documents.</span>
+<span id="cb19-3"><a aria-label="3"></a>#|   Please set `embed-resources: false` in your metadata.</span>
+<span id="cb19-4"><a aria-label="4"></a>#| standalone: true</span>
+<span id="cb19-5"><a aria-label="5"></a>#| components: [editor, viewer]</span>
+<span id="cb19-6"><a aria-label="6"></a></span>
+<span id="cb19-7"><a aria-label="7"></a>shinyApp(</span>
+<span id="cb19-8"><a aria-label="8"></a>ui=fluidPage(</span>
+<span id="cb19-9"><a aria-label="9"></a>  selectInput("data",label="Select data",</span>
+<span id="cb19-10"><a aria-label="10"></a>              choices=c("mtcars","faithful","iris")),</span>
+<span id="cb19-11"><a aria-label="11"></a>  tableOutput("table"),</span>
+<span id="cb19-12"><a aria-label="12"></a>  uiOutput("ui")</span>
+<span id="cb19-13"><a aria-label="13"></a>),</span>
+<span id="cb19-14"><a aria-label="14"></a></span>
+<span id="cb19-15"><a aria-label="15"></a>server=function(input, output) {</span>
+<span id="cb19-16"><a aria-label="16"></a>  </span>
+<span id="cb19-17"><a aria-label="17"></a>  data &lt;- reactive({ get(input$data, 'package:datasets') })</span>
+<span id="cb19-18"><a aria-label="18"></a>  </span>
+<span id="cb19-19"><a aria-label="19"></a> output$ui &lt;- renderUI({</span>
+<span id="cb19-20"><a aria-label="20"></a>  if(input$data=="iris") plotOutput("plot",width="400px")</span>
+<span id="cb19-21"><a aria-label="21"></a>  })</span>
+<span id="cb19-22"><a aria-label="22"></a>  </span>
+<span id="cb19-23"><a aria-label="23"></a>  output$plot &lt;- renderPlot({hist(data()[, 1])})</span>
+<span id="cb19-24"><a aria-label="24"></a>  output$table &lt;- renderTable({head(data())})</span>
+<span id="cb19-25"><a aria-label="25"></a>})</span>
+<span id="cb19-26"><a aria-label="26"></a></span>
+<span id="cb19-27"><a aria-label="27"></a></span>
+<span id="cb19-28"><a aria-label="28"></a></span>
+<span id="cb19-29"><a aria-label="29"></a></span>
+<span id="cb19-30"><a aria-label="30"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="rendering-ui-2" class="slide level2">
 <h2>Rendering UI</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20" data-engine="r"><pre class="sourceCode numberSource shinylive-r number-lines code-with-copy"><code class="sourceCode"><span id="cb20-1"><a></a>#| '!! shinylive warning !!': |</span>
-<span id="cb20-2"><a></a>#|   shinylive does not work in self-contained HTML documents.</span>
-<span id="cb20-3"><a></a>#|   Please set `embed-resources: false` in your metadata.</span>
-<span id="cb20-4"><a></a>#| standalone: true</span>
-<span id="cb20-5"><a></a>#| components: [editor, viewer]</span>
-<span id="cb20-6"><a></a></span>
-<span id="cb20-7"><a></a>shinyApp(</span>
-<span id="cb20-8"><a></a>ui=fluidPage(</span>
-<span id="cb20-9"><a></a>  sliderInput("persons",label="Select number of persons", value=1, min=1,max=4),</span>
-<span id="cb20-10"><a></a>  uiOutput("ui")</span>
-<span id="cb20-11"><a></a>),</span>
-<span id="cb20-12"><a></a></span>
-<span id="cb20-13"><a></a>server=function(input, output) {</span>
-<span id="cb20-14"><a></a>  output$ui &lt;- renderUI({</span>
-<span id="cb20-15"><a></a>    lapply(1:input$persons, function(i) {</span>
-<span id="cb20-16"><a></a>         div(</span>
-<span id="cb20-17"><a></a>           textInput(paste0("name",i),"Enter name:",paste0("Person ",i)),</span>
-<span id="cb20-18"><a></a>           textInput(paste0("tel",i),"Enter phone number:",value = "0773921562"),</span>
-<span id="cb20-19"><a></a>           hr()</span>
-<span id="cb20-20"><a></a>         )</span>
-<span id="cb20-21"><a></a>    })</span>
-<span id="cb20-22"><a></a>  })</span>
-<span id="cb20-23"><a></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20" data-engine="r"><pre class="sourceCode numberSource shinylive-r number-lines code-with-copy"><code class="sourceCode"><span id="cb20-1"><a aria-label="1"></a>#| '!! shinylive warning !!': |</span>
+<span id="cb20-2"><a aria-label="2"></a>#|   shinylive does not work in self-contained HTML documents.</span>
+<span id="cb20-3"><a aria-label="3"></a>#|   Please set `embed-resources: false` in your metadata.</span>
+<span id="cb20-4"><a aria-label="4"></a>#| standalone: true</span>
+<span id="cb20-5"><a aria-label="5"></a>#| components: [editor, viewer]</span>
+<span id="cb20-6"><a aria-label="6"></a></span>
+<span id="cb20-7"><a aria-label="7"></a>shinyApp(</span>
+<span id="cb20-8"><a aria-label="8"></a>ui=fluidPage(</span>
+<span id="cb20-9"><a aria-label="9"></a>  sliderInput("persons",label="Select number of persons", value=1, min=1,max=4),</span>
+<span id="cb20-10"><a aria-label="10"></a>  uiOutput("ui")</span>
+<span id="cb20-11"><a aria-label="11"></a>),</span>
+<span id="cb20-12"><a aria-label="12"></a></span>
+<span id="cb20-13"><a aria-label="13"></a>server=function(input, output) {</span>
+<span id="cb20-14"><a aria-label="14"></a>  output$ui &lt;- renderUI({</span>
+<span id="cb20-15"><a aria-label="15"></a>    lapply(1:input$persons, function(i) {</span>
+<span id="cb20-16"><a aria-label="16"></a>         div(</span>
+<span id="cb20-17"><a aria-label="17"></a>           textInput(paste0("name",i),"Enter name:",paste0("Person ",i)),</span>
+<span id="cb20-18"><a aria-label="18"></a>           textInput(paste0("tel",i),"Enter phone number:",value = "0773921562"),</span>
+<span id="cb20-19"><a aria-label="19"></a>           hr()</span>
+<span id="cb20-20"><a aria-label="20"></a>         )</span>
+<span id="cb20-21"><a aria-label="21"></a>    })</span>
+<span id="cb20-22"><a aria-label="22"></a>  })</span>
+<span id="cb20-23"><a aria-label="23"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="server" class="slide level2">
 <h2>Server</h2>
@@ -1002,10 +1008,10 @@
 </ul>
 <div class="fragment">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>  output<span class="sc">$</span>hist <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
-<span id="cb21-2"><a></a>                    tile <span class="ot">&lt;-</span> <span class="st">"histogram of 100 random numbers"</span></span>
-<span id="cb21-3"><a></a>                    <span class="fu">hist</span>(<span class="fu">rnorm</span>(<span class="dv">100</span>), <span class="at">main =</span> title)</span>
-<span id="cb21-4"><a></a>                })</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a aria-label="1"></a>  output<span class="sc">$</span>hist <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
+<span id="cb21-2"><a aria-label="2"></a>                    tile <span class="ot">&lt;-</span> <span class="st">"histogram of 100 random numbers"</span></span>
+<span id="cb21-3"><a aria-label="3"></a>                    <span class="fu">hist</span>(<span class="fu">rnorm</span>(<span class="dv">100</span>), <span class="at">main =</span> title)</span>
+<span id="cb21-4"><a aria-label="4"></a>                })</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 <div class="fragment">
@@ -1086,7 +1092,7 @@
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'jumpToSlide': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"\u003ci class=\"fas fa-gear\">\u003c/i>","content":"\u003cul class=\"slide-menu-items\">\n\u003cli class=\"slide-tool-item active\" data-item=\"0\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\">\u003ckbd>f\u003c/kbd> Fullscreen\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"1\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\">\u003ckbd>s\u003c/kbd> Speaker View\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"2\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\">\u003ckbd>o\u003c/kbd> Slide Overview\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"3\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\">\u003ckbd>e\u003c/kbd> PDF Export Mode\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"4\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\">\u003ckbd>r\u003c/kbd> Scroll View Mode\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"5\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\">\u003ckbd>b\u003c/kbd> Toggle Chalkboard\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"6\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\">\u003ckbd>c\u003c/kbd> Toggle Notes Canvas\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"7\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\">\u003ckbd>d\u003c/kbd> Download Drawings\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"8\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\">\u003ckbd>?\u003c/kbd> Keyboard Help\u003c/a>\u003c/li>\n\u003c/ul>"}],"openButton":true,"openButtonLabel":"Slide menu"},
 'chalkboard': {"buttons":true},
 'pointer': {"key":"q","color":"#95b540","pointerSize":12,"alwaysVisible":false,"trail":true,"trailDuration":250,"trailSampling":2,"trailMaxPoints":80},
 'smaller': false,
@@ -1381,7 +1387,8 @@
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
           // Inspect non-navigation links and adorn them if external
-         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          window.quartoDecorateExternalLinks = function (root) {
+         var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
           for (var i=0; i<links.length; i++) {
             const link = links[i];
             if (!isInternal(link.href)) {
@@ -1390,8 +1397,69 @@
               if (link.dataset.originalHref !== undefined) {
                 link.href = link.dataset.originalHref;
               }
+              if (!link.classList.contains('no-external-icon')) {
+              }
             }
           }
+          };
+          window.quartoDecorateExternalLinks(window.document);
+        // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+        // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+        const hideOnEscAndFocusOut = {
+          name: 'hideOnEscAndFocusOut',
+          defaultValue: true,
+          fn(instance) {
+            const dismiss = () => {
+              // A show scheduled by the trigger delay would otherwise reopen it
+              instance.clearDelayTimeouts();
+              instance.hide();
+            };
+            const onKeyDown = (event) => {
+              if (event.key !== 'Escape') {
+                return;
+              }
+              // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+              // except an open reveal.js slide menu, which Esc should close too.
+              // The menu handles keys only when its keyboard option is on.
+              const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+                window.Reveal.getConfig().menu?.keyboard !== false;
+              if (!menuHandlesEsc) {
+                event.stopPropagation();
+              }
+              if (instance.popper.contains(window.document.activeElement)) {
+                // Disabled while refocusing so the focus trigger does not reopen it
+                instance.disable();
+                instance.reference.focus();
+                instance.enable();
+              }
+              dismiss();
+            };
+            const onFocusOut = (event) => {
+              const target = event.relatedTarget;
+              if (target && !instance.reference.contains(target) &&
+                  !instance.popper.contains(target)) {
+                dismiss();
+              }
+            };
+            // On the trigger too: a click trigger (code-annotations: select) has no
+            // blur handling. Attached for the instance's lifetime so leaving the
+            // trigger also cancels a show still pending on the trigger delay.
+            instance.reference.addEventListener('focusout', onFocusOut);
+            return {
+              onShow() {
+                window.document.addEventListener('keydown', onKeyDown, true);
+                instance.popper.addEventListener('focusout', onFocusOut);
+              },
+              onHide() {
+                window.document.removeEventListener('keydown', onKeyDown, true);
+                instance.popper.removeEventListener('focusout', onFocusOut);
+              },
+              onDestroy() {
+                instance.reference.removeEventListener('focusout', onFocusOut);
+              },
+            };
+          },
+        };
         function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
           const config = {
             allowHTML: true,
@@ -1405,6 +1473,7 @@
             interactiveBorder: 10,
             theme: 'light-border',
             placement: 'bottom-start',
+            plugins: [hideOnEscAndFocusOut],
           };
           if (contentFn) {
             config.content = contentFn;

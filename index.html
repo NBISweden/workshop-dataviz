@@ -2,18 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="Publication-ready Data Visualization using R including Quarto and Shiny">
 
-<title>NBIS Workshop • Advanced Data Visualization in R</title>
+<title>NBIS Workshop • Advanced Data Visualization</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -34,14 +40,17 @@ ul.task-list li input[type="checkbox"] {
 <link href="./assets/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-61eba5c020ea5789678b404df388a8b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-78dc8d2f9201844ca3698f4d39392fc4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7fe8a46c6e6c6d734b0a061831451f97.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-09eb00867b8540305d61220c5a7911fd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,24 +88,23 @@ background-size: cover;
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&amp;family=Nunito:ital,wght@0,200..700;1,200..700&amp;display=swap" rel="stylesheet">
-  
 
 
-<meta property="og:title" content="NBIS Workshop • Advanced Data Visualization in R">
+<meta property="og:title" content="NBIS Workshop • Advanced Data Visualization">
 <meta property="og:description" content="Publication-ready Data Visualization using R including Quarto and Shiny">
-<meta property="og:image" content="assets/images/seo.webp">
+<meta property="og:image" content="https://nbisweden.github.io/workshop-ngsintro/assets/images/seo.webp">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/images/logos/nbis-scilifelab.png" alt="logo" class="navbar-logo light-content">
-    <img src="./assets/images/logos/nbis-scilifelab.png" alt="logo" class="navbar-logo dark-content">
+    <img src="./assets/logos/nbis-scilifelab.png" alt="logo" class="navbar-logo light-content">
+    <img src="./assets/logos/nbis-scilifelab.png" alt="logo" class="navbar-logo dark-content">
     </a>
   </div>
         <div class="quarto-navbar-tools tools-end">
@@ -108,7 +116,7 @@ background-size: cover;
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Advanced Data Visualization in R</h1>
+      <h1 class="title">Advanced Data Visualization</h1>
             <p class="subtitle lead">NBIS Workshop</p>
                   <div>
         <div class="description">
@@ -132,78 +140,176 @@ background-size: cover;
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content" tabindex="-1">
 
 
 
 
 
-<section id="topics" class="level2">
-<h2 data-anchor-id="topics">Topics</h2>
-<div class="topic-grid">
-<section id="ggplot2" class="level3 topic-item">
-<h3 data-anchor-id="ggplot2">ggplot2</h3>
-<p>Data visualization in R using ggplot2</p>
+<div class="syllabus-grid">
+<section id="beg-level" class="level4 syllabus-card wide">
+<h4 class="anchored" data-anchor-id="beg-level"><i class="fa-solid fa-play" aria-label="play"></i> Beginner Level</h4>
+<ul>
+<li>Handle data in R for visualizations</li>
+<li>Apply ggplot grammar to get publication-grade plots</li>
+<li>Combine different data and/or different plots</li>
+<li>PCA, Heatmaps, Phylogenetic trees and Maps</li>
+</ul>
 </section>
-<section id="single-cell-data" class="level3 topic-item">
-<h3 data-anchor-id="single-cell-data">Single-cell data</h3>
-<p>Single-cell data visualization using Seurat</p>
+<section id="adv-level" class="level4 syllabus-card wide">
+<h4 class="anchored" data-anchor-id="adv-level"><i class="fa-solid fa-forward" aria-label="forward"></i> Advanced Level</h4>
+<ul>
+<li>Using the language of graphics: ggplot2</li>
+<li>Basic and advanced plotting in ggplot2</li>
+<li>Single-cell data visualizations with Seurat</li>
+<li>Quarto notebooks and reports</li>
+<li>Dynamic plotting with Quarto</li>
+<li>Interactive web apps with Shiny</li>
+</ul>
 </section>
-<section id="quarto-notebooks" class="level3 topic-item">
-<h3 data-anchor-id="quarto-notebooks">Quarto notebooks</h3>
-<p>Quarto notebooks and reports</p>
+<section id="ggplot" class="level4 syllabus-card">
+<h4 class="anchored" data-anchor-id="ggplot"><i class="fa-solid fa-chart-column" aria-label="chart-column"></i> ggplot2</h4>
+<ul>
+<li>How to wrangle data correctly for ggplot</li>
+<li>Working with <code>geoms</code>, <code>aes</code>, <code>facets</code> …</li>
+<li>Combine different plots to publication-grade</li>
+<li>PCA, Heatmaps and single-cell data visualization</li>
+<li>Maps and phylogenetic trees visualizations (for interested)</li>
+</ul>
 </section>
-<section id="shiny-web-applications" class="level3 topic-item">
-<h3 data-anchor-id="shiny-web-applications">Shiny web applications</h3>
-<p>Build interactive web applications using Shiny</p>
+<section id="quarto" class="level4 syllabus-card">
+<h4 class="anchored" data-anchor-id="quarto"><i class="fa-solid fa-book-open-reader" aria-label="book-open-reader"></i> Quarto</h4>
+<ul>
+<li>Quarto syntax and functions</li>
+<li>Dashboards with quarto</li>
+<li>Dynamic plotting with <code>plotly</code>, <code>crosstalk</code> and others</li>
+</ul>
+</section>
+<section id="shiny" class="level4 syllabus-card">
+<h4 class="anchored" data-anchor-id="shiny"><i class="fa-solid fa-sun" aria-label="sun"></i> Shiny</h4>
+<ul>
+<li><code>UI</code> and <code>Server</code></li>
+<li><code>Reactivity</code> and error validations</li>
+<li>Modularization and deployment</li>
+</ul>
 </section>
 </div>
-<div class="workshop-facts">
-<div class="workshop-fact">
-<p><strong>Once a year</strong></p>
-<p>Typically Spring</p>
-</div>
-<div class="workshop-fact">
-<p><strong>Venue</strong></p>
-<p>On-site in Lund, Sweden</p>
-</div>
-<div class="workshop-fact">
-<p><strong>About 30 seats</strong></p>
-<p>Registration is required</p>
-</div>
-<div class="workshop-fact">
-<p><strong>Taught in English</strong></p>
-<p>Lectures and hands-on exercises</p>
-</div>
-</div>
-</section>
+<section id="learning-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="learning-outcomes">Learning outcomes</h2>
+<p>After this workshop, you should be able to:</p>
 <div class="details-grid">
-<section id="audience" class="level2 details-section">
-<h2 data-anchor-id="audience">Audience</h2>
+<section id="advanced-level" class="level4 details-section">
+<h4 class="anchored" data-anchor-id="advanced-level">Advanced level</h4>
+<div class="detail-list checks">
+<ul>
+<li><i class="fa-solid fa-check" aria-label="check"></i> Handle data in R for visualizations</li>
+<li><i class="fa-solid fa-check" aria-label="check"></i> Familiarize with ggplot2 functions and techniques at advanced level</li>
+<li><i class="fa-solid fa-check" aria-label="check"></i> Combine different data and/or different plots that are of publication-ready</li>
+<li><i class="fa-solid fa-check" aria-label="check"></i> Create interactive documents with Quarto for data exploration and analysis</li>
+<li><i class="fa-solid fa-check" aria-label="check"></i> Write your own simple Shiny app in R</li>
+</ul>
+</div>
+</section>
+<section id="beginner-level" class="level4 details-section">
+<h4 class="anchored" data-anchor-id="beginner-level">Beginner level</h4>
+<div class="detail-list checks">
+<ul>
+<li><i class="fa-solid fa-check" aria-label="check"></i> Handle data in R for visualizations</li>
+<li><i class="fa-solid fa-check" aria-label="check"></i> Apply the grammar efficiently in ggplot to obtain the desired plot</li>
+<li><i class="fa-solid fa-check" aria-label="check"></i> Combine different data and/or different plots that are of publication-grade</li>
+</ul>
+</div>
+</section>
+</div>
+</section>
+<section id="who-can-apply" class="level2">
+<h2 class="anchored" data-anchor-id="who-can-apply">Who can apply?</h2>
+<div class="details-grid">
+<section id="eligibility" class="level4 details-section">
+<h4 class="anchored" data-anchor-id="eligibility">Eligibility</h4>
 <div class="detail-list">
 <ul>
 <li><strong>Audience:</strong> PhD students, postdocs and researchers in life sciences, healthcare and related fields</li>
 <li><strong>Background:</strong> Basic R experience needed</li>
 <li><strong>Eligibility:</strong> Swedish applicants are prioritized; international applicants are welcome</li>
+<li><strong>Research:</strong> To get the most from the workshop, one could try visualizing their own data during the course and we can help you.</li>
 </ul>
 </div>
 </section>
-<section id="registration-and-fees" class="level2 details-section">
-<h2 data-anchor-id="registration-and-fees">Registration and fees</h2>
+<section id="how-selection-works" class="level4">
+<h4 class="anchored" data-anchor-id="how-selection-works">How selection works</h4>
 <div class="detail-list">
 <ul>
-<li><strong>Announcements:</strong> Published on <a href="https://training.scilifelab.se/">SciLifeLab Training</a> a few months in advance</li>
-<li><strong>Online:</strong> Free for academia; industry participants pay a fee</li>
-<li><strong>On-site:</strong> Fees apply to all and include lunch, coffee breaks and a course dinner</li>
-<li><strong>Logistics:</strong> Arrange your own travel and accommodation; bring a laptop</li>
-<li><strong>Billing:</strong> An institutional reference is required; NBIS cannot invoice individuals</li>
+<li><strong>Criteria:</strong> Entry requirements, motivation to attend, and gender and geographical balance are considered when applications exceed capacity</li>
+<li><strong>Priority:</strong> PhD students are prioritized, followed by postdocs, PIs and other researchers</li>
+<li><strong>Master’s students:</strong> Accepted when seats are available</li>
+<li><strong>International applicants:</strong> Accepted when seats are available</li>
 </ul>
 </div>
 </section>
 </div>
+<p>:::</p>
+<div class="fee-note">
+<p>NBIS training events do not provide formal university credits. If credits are essential, consult your home department <strong>before applying</strong> to establish whether it can recognize the workshop for credits. Participants with <strong>full attendance</strong> receive a certificate of participation stating the topics covered and the duration of the workshop.</p>
+</div>
+</section>
+<section id="upcoming-workshop" class="level2">
+<h2 class="anchored" data-anchor-id="upcoming-workshop">Upcoming workshop</h2>
+<p>This workshop typically runs once a year in spring (Mar/Apr/May). Upcoming workshops are announced on <a href="https://training.scilifelab.se/">SciLifeLab Training</a> and <a href="https://nbis.se/training">NBIS Training</a> a few months in advance. In case of a planned upcoming workshop, you will see registration information below.</p>
+</section>
+<section id="registration" class="level2">
+<h2 class="anchored" data-anchor-id="registration">Registration</h2>
+<section id="course-fees" class="level4 details-section fees">
+<h4 class="anchored" data-anchor-id="course-fees">Course fees</h4>
+<div>
+<p><span class="fee-mode">On-site</span> Academia, healthcare and government institutions from Sweden</p>
+<p><strong>SEK 2,000</strong></p>
+</div>
+<div class="hidden">
+<p><span class="fee-mode">On-site</span> Industry</p>
+<p><strong>SEK 15,000</strong></p>
+</div>
+<div class="hidden">
+<p><span class="fee-mode">Online</span> All participants</p>
+<p><strong>SEK 1,000</strong></p>
+</div>
+<p>An institutional reference is required for invoicing as NBIS cannot invoice individuals. <span class="hidden">For on-site courses, the fee includes lunch, coffee, tea and snacks twice a day, and one course dinner. Travel and accommodation are not included; arrange and pay for your own.</span> Participants are invoiced six weeks before the workshop. No refunds are provided for cancellations.</p>
+</section>
+<section id="key-dates" class="level4 details-section">
+<h4 class="anchored" data-anchor-id="key-dates">Key dates</h4>
+<div class="timeline">
+<div class="timeline-step">
+<p><strong>03 Dec 2026</strong><br>
+Applications open</p>
+</div>
+<div class="timeline-step">
+<p><strong>05 Mar 2027</strong><br>
+Applications close</p>
+</div>
+<div class="timeline-step">
+<p><strong>10-12 Mar 2027</strong><br>
+Decision</p>
+</div>
+<div class="timeline-step">
+<p><strong>19 Mar 2027</strong><br>
+Confirmation, invoicing</p>
+</div>
+<div class="timeline-step">
+<p><strong>27-29 Apr 2027</strong><br>
+Workshop week (Tuesday to Thursday)</p>
+</div>
+</div>
+</section>
+<div class="details-section hero">
+<p><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Applications yet to open</p>
+<p><span class="detail"><i class="fa-solid fa-calendar-days" aria-label="calendar-days"></i> 27-29 April 2027</span> <span class="detail"><i class="fa-solid fa-location-dot" aria-label="location-dot"></i> Lund, Umeå and Tartu (Estonia)</span></p>
+<p><span class="btn btn-primary"><a href="" target="_blank" rel="noopener"><span class="large text-whitesmoke"><i class="fa-solid fa-square-pen" aria-label="square-pen"></i> Apply now</span></a></span></p>
+</div>
+</section>
 <section id="instances" class="level2">
-<h2 data-anchor-id="instances">Instances</h2>
-<p>Choose an instance below for course materials and more information.</p>
+<h2 class="anchored" data-anchor-id="instances">Instances</h2>
+<p>Course materials and practical information for each workshop instance.</p>
+<div style="margin-bottom: 2em;">
 <div class="workshop-list">
 <div class="workshop-item">
 <span class="btn btn-tertiary"><a href="https://NBISweden.github.io/workshop-dataviz/2704/">2027 Apr</a></span>
@@ -230,6 +336,25 @@ background-size: cover;
 <span class="btn btn-tertiary"><a href="https://nbisweden.github.io/Workshop_geneco_2020_05/docs/">2020 Nov</a></span>
 </div>
 </div>
+</div>
+</section>
+<section id="contact" class="level2">
+<h2 class="anchored" data-anchor-id="contact">Contact</h2>
+<div class="details-grid">
+<section id="get-in-touch" class="level4 details-section">
+<h4 class="anchored" data-anchor-id="get-in-touch">Get in touch</h4>
+<p>Lokeshwaran Manoharan &amp; Katja Kozjek <span class="badge badge-tertiary"><a href="mailto:edu.plotting.r@nbis.se">edu.plotting.r@nbis.se</a></span></p>
+</section>
+<section id="code-of-conduct" class="level4 details-section">
+<h4 class="anchored" data-anchor-id="code-of-conduct">Code of conduct</h4>
+<p>By participating in this workshop, you agree to the <a href="https://nbisweden.github.io/workshop-dataviz/2704/home_coc.html">NBIS Code of Conduct</a>.</p>
+</section>
+</div>
+<hr>
+<p><img src="assets/logos/nbis-scilifelab-ngi.svg" alt="NBIS, SciLifeLab and NGI logos" height="26"></p>
+<p class="small">
+<a href="https://nbisweden.github.io/workshop-dataviz">Advanced Data Visualization</a>, a workshop created by <a href="https://nbis.se/">National Bioinformatics Infrastructure (NBIS)</a> in partnership with <a href="https://ngisweden.scilifelab.se/">National Genomics Infrastructure (NGI)</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+</p>
 
 
 </section>
@@ -237,6 +362,13 @@ background-size: cover;
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -301,12 +433,13 @@ background-size: cover;
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/nbisweden\.github\.io\/workshop-ngsintro\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -315,8 +448,69 @@ background-size: cover;
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -330,6 +524,7 @@ background-size: cover;
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -492,44 +687,54 @@ background-size: cover;
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -628,6 +833,9 @@ background-size: cover;
     }
   });
   </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -638,7 +846,7 @@ background-size: cover;
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Published with <a href="https://quarto.org/">Quarto</a> v1.8.26</p>
+<p>Published with <a href="https://quarto.org/">Quarto</a> v1.11.9</p>
 </div>
   </div>
 </footer>
