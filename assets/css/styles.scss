@@ -399,6 +399,10 @@ blockquote,
   grid-column: span 4;
 }
 
+.syllabus-card.half {
+  grid-column: span 3;
+}
+
 .syllabus-card > h4 {
   position: relative;
   z-index: 1;
@@ -472,7 +476,8 @@ blockquote,
   }
 
   .syllabus-card,
-  .syllabus-card.wide {
+  .syllabus-card.wide,
+  .syllabus-card.half {
     grid-column: auto;
   }
 

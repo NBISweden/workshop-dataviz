@@ -11,7 +11,7 @@ anchor-sections: true
 ---
 
 ::: {.syllabus-grid}
-::: {.syllabus-card }
+::: {.syllabus-card .half}
 #### {{< fa play >}} Beginner Level {#beg-level}
 
 - Handle data in R for visualizations
@@ -21,7 +21,7 @@ anchor-sections: true
 
 :::
 
-::: {.syllabus-card}
+::: {.syllabus-card .half}
 #### {{< fa solid forward >}} Advanced Level {#adv-level}
 
 - Using the language of graphics: ggplot2
@@ -112,6 +112,8 @@ After this workshop, you should be able to:
 :::
 :::
 
+::: {.details-section}
+
 #### How selection works
 
 ::: {.detail-list}
@@ -119,6 +121,7 @@ After this workshop, you should be able to:
 - **Priority:** PhD students are prioritized, followed by postdocs, PIs and other researchers
 - **Master's students:** Accepted when seats are available
 - **International applicants:** Accepted when seats are available
+:::
 :::
 :::
 
