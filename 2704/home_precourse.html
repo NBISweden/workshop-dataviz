@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Precourse</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -68,15 +74,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="./assets/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-aad0577e513525cff268774c41effdc7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-78dc8d2f9201844ca3698f4d39392fc4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9d9254472f1004064f351133bd55448f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-84cff346afaf7daae4b4fe7e87659f87.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -125,11 +131,11 @@ background-size: cover;
 <meta property="og:image" content="https://nbisweden.github.io/workshop-dataviz/assets/images/seo.webp">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
@@ -137,8 +143,7 @@ background-size: cover;
     <img src="./assets/logos/nbis-scilifelab.png" alt="logo" class="navbar-logo dark-content">
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -180,6 +185,7 @@ background-size: cover;
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
+            <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -205,52 +211,52 @@ background-size: cover;
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#installations" id="toc-installations" class="nav-link active" data-scroll-target="#installations"><i class="fa-solid fa-server" aria-label="server"></i> Installations</a>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736572766572203e7d7d-installations" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736572766572203e7d7d-installations" class="nav-link active" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736572766572203e7d7d-installations"><i class="fa-solid fa-server" aria-label="server"></i> Installations</a>
   <ul>
-  <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r"><i class="fa-brands fa-r-project" aria-label="r-project"></i> R</a></li>
-  <li><a href="#ide" id="toc-ide" class="nav-link" data-scroll-target="#ide"><i class="fa-solid fa-pen-to-square" aria-label="pen-to-square"></i> IDE</a></li>
-  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto"><i class="fa-solid fa-book-open-reader" aria-label="book-open-reader"></i> Quarto</a></li>
-  <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages"><i class="fa-solid fa-cube" aria-label="cube"></i> R packages</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320722d70726f6a656374203e7d7d-r" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320722d70726f6a656374203e7d7d-r" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320722d70726f6a656374203e7d7d-r"><i class="fa-brands fa-r-project" aria-label="r-project"></i> R</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736f6c69642070656e2d746f2d737175617265203e7d7d-ide" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736f6c69642070656e2d746f2d737175617265203e7d7d-ide" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736f6c69642070656e2d746f2d737175617265203e7d7d-ide"><i class="fa-solid fa-pen-to-square" aria-label="pen-to-square"></i> IDE</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736f6c696420626f6f6b2d6f70656e2d726561646572203e7d7d-quarto" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736f6c696420626f6f6b2d6f70656e2d726561646572203e7d7d-quarto" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736f6c696420626f6f6b2d6f70656e2d726561646572203e7d7d-quarto"><i class="fa-solid fa-book-open-reader" aria-label="book-open-reader"></i> Quarto</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736f6c69642063756265203e7d7d-r-packages" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736f6c69642063756265203e7d7d-r-packages" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736f6c69642063756265203e7d7d-r-packages"><i class="fa-solid fa-cube" aria-label="cube"></i> R packages</a></li>
   </ul></li>
-  <li><a href="#preparations" id="toc-preparations" class="nav-link" data-scroll-target="#preparations"><i class="fa-solid fa-book" aria-label="book"></i> Preparations</a></li>
-  <li><a href="#alternative-installations-with-containers" id="toc-alternative-installations-with-containers" class="nav-link" data-scroll-target="#alternative-installations-with-containers"><i class="fa-solid fa-toolbox" aria-label="toolbox"></i> Alternative installations with containers</a>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120626f6f6b203e7d7d-preparations" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120626f6f6b203e7d7d-preparations" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120626f6f6b203e7d7d-preparations"><i class="fa-solid fa-book" aria-label="book"></i> Preparations</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736f6c696420746f6f6c626f78203e7d7d-alternative-installations-with-containers" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736f6c696420746f6f6c626f78203e7d7d-alternative-installations-with-containers" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736f6c696420746f6f6c626f78203e7d7d-alternative-installations-with-containers"><i class="fa-solid fa-toolbox" aria-label="toolbox"></i> Alternative installations with containers</a>
   <ul>
-  <li><a href="#docker" id="toc-docker" class="nav-link" data-scroll-target="#docker"><i class="fa-brands fa-docker" aria-label="docker"></i> Docker</a>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320646f636b6572203e7d7d-docker" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320646f636b6572203e7d7d-docker" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320646f636b6572203e7d7d-docker"><i class="fa-brands fa-docker" aria-label="docker"></i> Docker</a>
   <ul class="collapse">
-  <li><a href="#visual-studio-code" id="toc-visual-studio-code" class="nav-link" data-scroll-target="#visual-studio-code"><i class="fa-brands fa-microsoft" aria-label="microsoft"></i> Visual Studio Code</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e6473206d6963726f736f6674203e7d7d-visual-studio-code" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e6473206d6963726f736f6674203e7d7d-visual-studio-code" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e6473206d6963726f736f6674203e7d7d-visual-studio-code"><i class="fa-brands fa-microsoft" aria-label="microsoft"></i> Visual Studio Code</a></li>
   </ul></li>
-  <li><a href="#apptainer" id="toc-apptainer" class="nav-link" data-scroll-target="#apptainer"><i class="fa-brands fa-app-store" aria-label="app-store"></i> Apptainer</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e6473206170702d73746f7265203e7d7d-apptainer" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e6473206170702d73746f7265203e7d7d-apptainer" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e6473206170702d73746f7265203e7d7d-apptainer"><i class="fa-brands fa-app-store" aria-label="app-store"></i> Apptainer</a></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content" tabindex="-1">
 
 
 
 
 
-<section id="installations" class="level2">
-<h2 class="anchored" data-anchor-id="installations"><i class="fa-solid fa-server" aria-label="server"></i> Installations</h2>
-<section id="r" class="level4">
-<h4 class="anchored" data-anchor-id="r"><i class="fa-brands fa-r-project" aria-label="r-project"></i> R</h4>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736572766572203e7d7d-installations" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736572766572203e7d7d-installations"><i class="fa-solid fa-server" aria-label="server"></i> Installations</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320722d70726f6a656374203e7d7d-r" class="level4">
+<h4 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320722d70726f6a656374203e7d7d-r"><i class="fa-brands fa-r-project" aria-label="r-project"></i> R</h4>
 <p>Download and install the latest version of R from <a href="https://cloud.r-project.org/">r-project.org</a>.</p>
 </section>
-<section id="ide" class="level4">
-<h4 class="anchored" data-anchor-id="ide"><i class="fa-solid fa-pen-to-square" aria-label="pen-to-square"></i> IDE</h4>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736f6c69642070656e2d746f2d737175617265203e7d7d-ide" class="level4">
+<h4 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736f6c69642070656e2d746f2d737175617265203e7d7d-ide"><i class="fa-solid fa-pen-to-square" aria-label="pen-to-square"></i> IDE</h4>
 <p>Install <a href="https://posit.co/download/rstudio-desktop/">RStudio</a> or <a href="https://posit.co/products/ide/positron/">Positron</a>. RStudio/Positron provides you with tools like code editor with highlighting, project management, version control, package building, debugger, profiler and more. <a href="https://code.visualstudio.com/docs/setup/setup-overview">Visual Studio code</a> is another good alternative to RStudio/Positron.</p>
 </section>
-<section id="quarto" class="level4">
-<h4 class="anchored" data-anchor-id="quarto"><i class="fa-solid fa-book-open-reader" aria-label="book-open-reader"></i> Quarto</h4>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736f6c696420626f6f6b2d6f70656e2d726561646572203e7d7d-quarto" class="level4">
+<h4 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736f6c696420626f6f6b2d6f70656e2d726561646572203e7d7d-quarto"><i class="fa-solid fa-book-open-reader" aria-label="book-open-reader"></i> Quarto</h4>
 <p>Download and install the latest version of Quarto from <a href="https://quarto.org/docs/get-started/">quarto.org</a>.</p>
 </section>
-<section id="r-packages" class="level4">
-<h4 class="anchored" data-anchor-id="r-packages"><i class="fa-solid fa-cube" aria-label="cube"></i> R packages</h4>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736f6c69642063756265203e7d7d-r-packages" class="level4">
+<h4 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736f6c69642063756265203e7d7d-r-packages"><i class="fa-solid fa-cube" aria-label="cube"></i> R packages</h4>
 <p>Install all the R packages necessary for this course by opening an <code>R terminal</code> either in RStudio or VScode and pasting the following command:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"cowplot"</span>,<span class="st">"crosstalk"</span>,<span class="st">"dplyr"</span>,<span class="st">"DT"</span>,<span class="st">"gganimate"</span>,<span class="st">"ggiraph"</span>,</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"ggplot2"</span>,<span class="st">"ggpubr"</span>,<span class="st">"ggrepel"</span>,<span class="st">"ggthemes"</span>,<span class="st">"grid"</span>,<span class="st">"gridExtra"</span>,</span>
@@ -285,8 +291,8 @@ Tip
 </div>
 </section>
 </section>
-<section id="preparations" class="level2">
-<h2 class="anchored" data-anchor-id="preparations"><i class="fa-solid fa-book" aria-label="book"></i> Preparations</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120626f6f6b203e7d7d-preparations" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120626f6f6b203e7d7d-preparations"><i class="fa-solid fa-book" aria-label="book"></i> Preparations</h2>
 <p>To prepare for the course, you can follow one of the links below to warm up your skills necessary for the course.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -305,15 +311,15 @@ Tip
 </div>
 </div>
 </section>
-<section id="alternative-installations-with-containers" class="level2">
-<h2 class="anchored" data-anchor-id="alternative-installations-with-containers"><i class="fa-solid fa-toolbox" aria-label="toolbox"></i> Alternative installations with containers</h2>
-<section id="docker" class="level3">
-<h3 class="anchored" data-anchor-id="docker"><i class="fa-brands fa-docker" aria-label="docker"></i> Docker</h3>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736f6c696420746f6f6c626f78203e7d7d-alternative-installations-with-containers" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120736f6c696420746f6f6c626f78203e7d7d-alternative-installations-with-containers"><i class="fa-solid fa-toolbox" aria-label="toolbox"></i> Alternative installations with containers</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320646f636b6572203e7d7d-docker" class="level3">
+<h3 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320646f636b6572203e7d7d-docker"><i class="fa-brands fa-docker" aria-label="docker"></i> Docker</h3>
 <p>If you are more familiar with using <code>Docker</code>, all the tools necessary for the course are available as a Docker image. You can pull the image using the following command:</p>
 <pre><code>docker pull ghcr.io/nbisweden/workshop-adv-data-viz:latest</code></pre>
 <p>If you would like to try to install <code>Docker</code> and give it a try, please follow the instructions <a href="other/docker.html">here</a>.</p>
-<section id="visual-studio-code" class="level4">
-<h4 class="anchored" data-anchor-id="visual-studio-code"><i class="fa-brands fa-microsoft" aria-label="microsoft"></i> Visual Studio Code</h4>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e6473206d6963726f736f6674203e7d7d-visual-studio-code" class="level4">
+<h4 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e6473206d6963726f736f6674203e7d7d-visual-studio-code"><i class="fa-brands fa-microsoft" aria-label="microsoft"></i> Visual Studio Code</h4>
 <p>The best and most efficient way to work with the Docker image is with <code>VScode</code> and the extension <code>Dev Containers</code>. Similar to <code>RStudio</code> or <code>Posit</code>, <code>VScode</code> is an IDE maintained by Microsoft and it is quite efficient and robust for all Operating systems.</p>
 <ul>
 <li>To install VScode, follow the instructions <a href="https://code.visualstudio.com/docs/setup/setup-overview">here</a>.</li>
@@ -324,8 +330,8 @@ Tip
 </ul>
 </section>
 </section>
-<section id="apptainer" class="level3">
-<h3 class="anchored" data-anchor-id="apptainer"><i class="fa-brands fa-app-store" aria-label="app-store"></i> Apptainer</h3>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e6473206170702d73746f7265203e7d7d-apptainer" class="level3">
+<h3 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e6473206170702d73746f7265203e7d7d-apptainer"><i class="fa-brands fa-app-store" aria-label="app-store"></i> Apptainer</h3>
 <p>If for some reason, the installations doesn’t work on your computer and you happened to have access to any of the Swedish HPCs (non-sensitive) like in <a href="https://supr.naiss.se/login/">NAISS</a>. You can follow the instructions below:</p>
 <p>In some cases in <code>Dardel</code> (HPC from KTH), you might have to load the apptainer module first. The example below explains how one could do it in <a href="https://www.pdc.kth.se/hpc-services/computing-systems/dardel-hpc-system">Dardel</a>.</p>
 <pre><code>module load PDC apptainer</code></pre>
@@ -417,7 +423,8 @@ apptainer exec workshop.sif code tunnel</code></pre>
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -426,8 +433,69 @@ apptainer exec workshop.sif code tunnel</code></pre>
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -441,6 +509,7 @@ apptainer exec workshop.sif code tunnel</code></pre>
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -603,44 +672,54 @@ apptainer exec workshop.sif code tunnel</code></pre>
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -739,6 +818,9 @@ apptainer exec workshop.sif code tunnel</code></pre>
     }
   });
   </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -749,7 +831,7 @@ apptainer exec workshop.sif code tunnel</code></pre>
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Published with <a href="https://quarto.org/">Quarto</a> v1.8.26</p>
+<p>Published with <a href="https://quarto.org/">Quarto</a> v1.11.9</p>
 </div>
   </div>
 </footer>

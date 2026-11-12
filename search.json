@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Advanced Data Visualization in R",
+    "title": "Advanced Data Visualization",
     "section": "",
-    "text": "Data visualization in R using ggplot2\n\n\n\nSingle-cell data visualization using Seurat\n\n\n\nQuarto notebooks and reports\n\n\n\nBuild interactive web applications using Shiny\n\n\n\n\nOnce a year\nTypically Spring\n\n\nVenue\nOn-site in Lund, Sweden\n\n\nAbout 30 seats\nRegistration is required\n\n\nTaught in English\nLectures and hands-on exercises"
+    "text": "Handle data in R for visualizations\nApply ggplot grammar to get publication-grade plots\nCombine different data and/or different plots\nPCA, Heatmaps, Phylogenetic trees and Maps\n\n\n\n\n\nUsing the language of graphics: ggplot2\nBasic and advanced plotting in ggplot2\nSingle-cell data visualizations with Seurat\nQuarto notebooks and reports\nDynamic plotting with Quarto\nInteractive web apps with Shiny\n\n\n\n\n\nHow to wrangle data correctly for ggplot\nWorking with geoms, aes, facets …\nCombine different plots to publication-grade\nPCA, Heatmaps and single-cell data visualization\nMaps and phylogenetic trees visualizations (for interested)\n\n\n\n\n\nQuarto syntax and functions\nDashboards with quarto\nDynamic plotting with plotly, crosstalk and others\n\n\n\n\n\nUI and Server\nReactivity and error validations\nModularization and deployment"
   },
   {
     "objectID": "index.html#topics",
@@ -30,8 +30,43 @@
   {
     "objectID": "index.html#instances",
     "href": "index.html#instances",
-    "title": "Advanced Data Visualization in R",
+    "title": "Advanced Data Visualization",
     "section": "Instances",
-    "text": "Instances\nChoose an instance below for course materials and more information.\n\n\n2027 Apr\n\n\n2026 May\n\n\n2025 May\n\n\n2024 Apr\n\n\n2023 Apr\n\n\n2022 Oct\n\n\n2022 Apr\n\n\n2020 Nov"
+    "text": "Instances\nCourse materials and practical information for each workshop instance.\n\n\n\n2027 Apr\n\n\n2026 May\n\n\n2025 May\n\n\n2024 Apr\n\n\n2023 Apr\n\n\n2022 Oct\n\n\n2022 Apr\n\n\n2020 Nov"
+  },
+  {
+    "objectID": "index.html#learning-outcomes",
+    "href": "index.html#learning-outcomes",
+    "title": "Advanced Data Visualization",
+    "section": "Learning outcomes",
+    "text": "Learning outcomes\nAfter this workshop, you should be able to:\n\n\nAdvanced level\n\n\n Handle data in R for visualizations\n Familiarize with ggplot2 functions and techniques at advanced level\n Combine different data and/or different plots that are of publication-ready\n Create interactive documents with Quarto for data exploration and analysis\n Write your own simple Shiny app in R\n\n\n\n\nBeginner level\n\n\n Handle data in R for visualizations\n Apply the grammar efficiently in ggplot to obtain the desired plot\n Combine different data and/or different plots that are of publication-grade"
+  },
+  {
+    "objectID": "index.html#who-can-apply",
+    "href": "index.html#who-can-apply",
+    "title": "Advanced Data Visualization",
+    "section": "Who can apply?",
+    "text": "Who can apply?\n\n\nEligibility\n\n\nAudience: PhD students, postdocs and researchers in life sciences, healthcare and related fields\nBackground: Basic R experience needed\nEligibility: Swedish applicants are prioritized; international applicants are welcome\nResearch: To get the most from the workshop, one could try visualizing their own data during the course and we can help you.\n\n\n\n\nHow selection works\n\n\nCriteria: Entry requirements, motivation to attend, and gender and geographical balance are considered when applications exceed capacity\nPriority: PhD students are prioritized, followed by postdocs, PIs and other researchers\nMaster’s students: Accepted when seats are available\nInternational applicants: Accepted when seats are available\n\n\n\n\n:::\n\nNBIS training events do not provide formal university credits. If credits are essential, consult your home department before applying to establish whether it can recognize the workshop for credits. Participants with full attendance receive a certificate of participation stating the topics covered and the duration of the workshop."
+  },
+  {
+    "objectID": "index.html#upcoming-workshop",
+    "href": "index.html#upcoming-workshop",
+    "title": "Advanced Data Visualization",
+    "section": "Upcoming workshop",
+    "text": "Upcoming workshop\nThis workshop typically runs once a year in spring (Mar/Apr/May). Upcoming workshops are announced on SciLifeLab Training and NBIS Training a few months in advance. In case of a planned upcoming workshop, you will see registration information below."
+  },
+  {
+    "objectID": "index.html#registration",
+    "href": "index.html#registration",
+    "title": "Advanced Data Visualization",
+    "section": "Registration",
+    "text": "Registration\n\nCourse fees\n\nOn-site Academia, healthcare and government institutions from Sweden\nSEK 2,000\n\n\nOn-site Industry\nSEK 15,000\n\n\nOnline All participants\nSEK 1,000\n\nAn institutional reference is required for invoicing as NBIS cannot invoice individuals. For on-site courses, the fee includes lunch, coffee, tea and snacks twice a day, and one course dinner. Travel and accommodation are not included; arrange and pay for your own. Participants are invoiced six weeks before the workshop. No refunds are provided for cancellations.\n\n\nKey dates\n\n\n03 Dec 2026\nApplications open\n\n\n05 Mar 2027\nApplications close\n\n\n10-12 Mar 2027\nDecision\n\n\n19 Mar 2027\nConfirmation, invoicing\n\n\n27-29 Apr 2027\nWorkshop week (Tuesday to Thursday)\n\n\n\n\n Applications yet to open\n 27-29 April 2027  Lund, Umeå and Tartu (Estonia)\n Apply now"
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Advanced Data Visualization",
+    "section": "Contact",
+    "text": "Contact\n\n\nGet in touch\nLokeshwaran Manoharan & Katja Kozjek edu.plotting.r@nbis.se\n\n\nCode of conduct\nBy participating in this workshop, you agree to the NBIS Code of Conduct.\n\n\n\n\n\nAdvanced Data Visualization, a workshop created by National Bioinformatics Infrastructure (NBIS) in partnership with National Genomics Infrastructure (NGI) is licensed under CC BY-NC-SA 4.0"
   }
 ]
