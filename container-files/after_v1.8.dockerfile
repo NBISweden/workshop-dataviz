@@ -15,14 +15,19 @@ RUN apt-get update -y \
   && apt-get install -y ./quarto-linux-amd64.deb \
   && rm -rf ./quarto-linux-amd64.deb
 
-# Install VS Code
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt update && apt upgrade -y \
   && apt-get install -y python3 python3-pip python3-venv \
       && apt-get clean
+
+# Install VS Code CLI (for `code tunnel`)
+RUN curl -fsSL "https://code.visualstudio.com/sha/download?build=stable&os=cli-alpine-x64" -o /tmp/vscode-cli.tar.gz \
+  && tar -xzf /tmp/vscode-cli.tar.gz -C /usr/local/bin \
+  && rm /tmp/vscode-cli.tar.gz
+
 ENV RETICULATE_PYTHON=/usr/bin/python3
-RUN pip install --break-system-packages polars seaborn plotly altair jupyter
+RUN pip install --break-system-packages --upgrade polars "seaborn>=0.13" "pandas>=2.1" plotly altair jupyter
 RUN pip install --break-system-packages palmerpenguins
 RUN pip install --break-system-packages pyarrow
 

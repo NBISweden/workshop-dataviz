@@ -11,7 +11,7 @@ format: html
 
 ::: {.callout-note} 
 
-The contents of this course are currently being generated. It will be updated here regularly until the course is completed. {{< fa file-powerpoint >}}  Slides, 
+The contents of this course will be updated here regularly. {{< fa file-powerpoint >}}  Slides, 
 {{< fa file-lines >}}  Lab
 :::
 
@@ -49,7 +49,7 @@ s %>%
 :::{.callout-tip icon="false" collapse="false"}
 ## {{< fa brands python >}} &nbsp; Python and data visualization with Polars
 
-If you are using Python as your main language of preference, we have here tried to reproduce some of the examples from the R course with `Polars` in combination with other python libraries. You can take a look at the examples [here](topics/python_polars.html)
+If you are using Python as your main language of preference, we have here tried to reproduce some of the examples from the R course with `Polars` in combination with other python libraries. You can take a look at the examples [here](topics/python/polars.html)
 :::
 
 :::{.callout-tip icon="false" collapse="true"}
