@@ -72,6 +72,18 @@ After this workshop, you should be able to:
 ::: {.details-grid}
 ::: {.details-section}
 
+#### Beginner level
+::: {.detail-list .checks}
+
+- {{< fa check >}} Handle data in R for visualizations
+- {{< fa check >}} Apply the grammar efficiently in ggplot to obtain the desired plot
+- {{< fa check >}} Combine different data and/or different plots that are of publication-grade
+
+:::
+:::
+
+::: {.details-section}
+
 #### Advanced level
 ::: {.detail-list .checks}
 
@@ -80,18 +92,6 @@ After this workshop, you should be able to:
 - {{< fa check >}} Combine different data and/or different plots that are of publication-ready
 - {{< fa check >}} Create interactive documents with Quarto for data exploration and analysis
 - {{< fa check >}} Write your own simple Shiny app in R
-
-:::
-:::
-
-::: {.details-section}
-
-#### Beginner level
-::: {.detail-list .checks}
-
-- {{< fa check >}} Handle data in R for visualizations
-- {{< fa check >}} Apply the grammar efficiently in ggplot to obtain the desired plot
-- {{< fa check >}} Combine different data and/or different plots that are of publication-grade
 
 :::
 :::
@@ -166,7 +166,7 @@ An institutional reference is required for invoicing as NBIS cannot invoice indi
 
 ::: {.timeline}
 ::: {.timeline-step}
-**03 Dec 2026**  
+**04 Dec 2026**  
 Applications open
 :::
 
@@ -176,12 +176,12 @@ Applications close
 :::
 
 ::: {.timeline-step}
-**10-12 Mar 2027**  
+**8 Mar 2027**  
 Decision
 :::
 
 ::: {.timeline-step}
-**19 Mar 2027**  
+**9-15 Mar 2027**  
 Confirmation, invoicing
 :::
 
