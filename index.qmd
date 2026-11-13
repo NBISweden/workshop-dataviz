@@ -192,7 +192,7 @@ Workshop week (Tuesday to Thursday)
 :::
 :::
 
-::: {.details-section .hero}
+::: {.details-section .hero .hidden}
 {{< fa circle-check >}} Applications yet to open
 
 [{{< fa calendar-days >}} 27-29 April 2027]{.detail} [{{< fa location-dot >}} Lund, Umeå and Tartu (Estonia)]{.detail}
